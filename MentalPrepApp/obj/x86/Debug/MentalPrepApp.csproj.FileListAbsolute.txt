@@ -1,8 +1,5 @@
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\App.xbf
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MainPage.xbf
-C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MentalPrepApp.xr.xml
-C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MentalPrepApp.exe
-C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MentalPrepApp.pdb
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\resources.pri
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\AppxManifest.xml
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Core\AppxManifest.xml
@@ -135,8 +132,6 @@ C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrep
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\XamlSaveStateFile.xml
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\MentalPrepApp.csproj.CoreCompileInputs.cache
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\MentalPrepApp.csproj.CopyComplete
-C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\MentalPrepApp.exe
-C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\MentalPrepApp.pdb
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\ResourceHandlingTask.state
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\FxResources.Microsoft.CSharp.SR.resw
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\FxResources.Microsoft.VisualBasic.SR.resw
@@ -241,3 +236,10 @@ C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrep
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\Views\UserControls\AppFxs\Nested\CreateTTSLargeUserControl.xaml
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\Views\UserControls\AppFxs\Nested\CreateTTSLargeUserControl.xbf
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\UserControls\AppFxs\Nested\CreateTTSLargeUserControl.xbf
+C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Core\MentalPrepHelper.exe
+C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MentalPrep.xr.xml
+C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MentalPrep.exe
+C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MentalPrep.pdb
+C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Core\MentalPrep.exe
+C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\MentalPrep.exe
+C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\MentalPrep.pdb

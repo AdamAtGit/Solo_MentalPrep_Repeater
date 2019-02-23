@@ -25,8 +25,8 @@
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
-    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MentalPrepApp.exe">
-      <PackagePath>entrypoint\MentalPrepApp.exe</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MentalPrep.exe">
+      <PackagePath>entrypoint\MentalPrep.exe</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -475,6 +475,26 @@
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\Video-Play-Icon-DodgBlue-01.png">
       <PackagePath>Assets\Images\Video-Play-Icon-DodgBlue-01.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\LargeTile.scale-100.png">
+      <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\LargeTile.scale-125.png">
+      <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\LargeTile.scale-150.png">
+      <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\LargeTile.scale-200.png">
+      <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\LargeTile.scale-400.png">
+      <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Misc\AdamPassProfile-01.png">
       <PackagePath>Assets\Misc\AdamPassProfile-01.png</PackagePath>
     </AppxPackagedFile>
@@ -550,6 +570,146 @@
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Misc\Video-Play-Icon-DodgBlue-01.png">
       <PackagePath>Assets\Misc\Video-Play-Icon-DodgBlue-01.png</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SmallTile.scale-100.png">
+      <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SmallTile.scale-125.png">
+      <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SmallTile.scale-150.png">
+      <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SmallTile.scale-200.png">
+      <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SmallTile.scale-400.png">
+      <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SplashScreen.scale-100.png">
+      <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SplashScreen.scale-125.png">
+      <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SplashScreen.scale-150.png">
+      <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SplashScreen.scale-400.png">
+      <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square150x150Logo.scale-100.png">
+      <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square150x150Logo.scale-125.png">
+      <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square150x150Logo.scale-150.png">
+      <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square150x150Logo.scale-400.png">
+      <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.scale-100.png">
+      <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.scale-125.png">
+      <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.scale-150.png">
+      <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.scale-400.png">
+      <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.targetsize-16.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.targetsize-24.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.targetsize-256.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.targetsize-32.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.targetsize-48.png">
+      <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\StoreLogo.scale-100.png">
+      <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\StoreLogo.scale-125.png">
+      <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\StoreLogo.scale-150.png">
+      <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\StoreLogo.scale-200.png">
+      <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\StoreLogo.scale-400.png">
+      <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Wide310x150Logo.scale-100.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Wide310x150Logo.scale-125.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Wide310x150Logo.scale-150.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Wide310x150Logo.scale-400.png">
+      <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
     </AppxPackagedFile>
@@ -569,10 +729,6 @@
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\StoreLogo.png">
-      <PackagePath>Assets\StoreLogo.png</PackagePath>
-      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
@@ -580,8 +736,8 @@
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MentalPrepApp.xr.xml">
-      <PackagePath>MentalPrepApp.xr.xml</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MentalPrep.xr.xml">
+      <PackagePath>MentalPrep.xr.xml</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
@@ -611,8 +767,8 @@
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
     </AppxPackagedFile>
-    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Core\MentalPrepApp.exe">
-      <PackagePath>MentalPrepApp.exe</PackagePath>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Core\MentalPrep.exe">
+      <PackagePath>MentalPrep.exe</PackagePath>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
