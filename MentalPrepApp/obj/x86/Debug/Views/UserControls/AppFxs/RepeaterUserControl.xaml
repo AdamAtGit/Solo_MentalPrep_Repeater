@@ -5,60 +5,74 @@
     xmlns:local="using:MentalPrepApp.Views.UserControls.AppFxs"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    xmlns:vm="using:PRSapp.ViewModels">
+    xmlns:ucnested="using:MentalPrepApp.Views.UserControls.AppFxs.Nested">
+    <!--xmlns:vm="using:PRSapp.ViewModels"-->
 
     <!--<UserControl.Resources>
         <vm:RepeaterViewModel x:Key="repeaterViewModel"/>
     </UserControl.Resources>-->
-    <Grid Height="640" Width="360" Background="Gray"
-          ><!--DataContext="{Binding Source={StaticResource repeaterViewModel}}"-->
+    <Grid Height="640" Width="360" Background="Gray">
+        <!--DataContext="{Binding Source={StaticResource repeaterViewModel}}"-->
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
-        <StackPanel>
-            <TextBox x:ConnectionId='12' x:Name="boxTitleName" Text="Mental Prep" 
-                    HorizontalAlignment="Center" VerticalAlignment="Top"
-                     Margin="0 5"/>
-            <TextBox x:ConnectionId='13' x:Name="boxTtsRaw" Height="250" Width="350" TextWrapping="Wrap"
+        <!--1st row-->
+        <StackPanel Orientation="Horizontal">
+            <ToggleSwitch x:ConnectionId='13' x:Name="tgsCommandModeOn" Header="Command Mode" FontSize="12"
+                          Width="150" Margin="10 2 -25 0"
+                          IsOn="False" IsEnabled="False"/>
+            <TextBox x:ConnectionId='14' x:Name="boxTitleName" Text="Mental Prep" 
+                    HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 5"/>
+        </StackPanel>
+
+        <!--2nd row-->
+        <StackPanel Grid.Row="1" HorizontalAlignment="Center">
+            
+            <ucnested:CreateTTSLargeUserControl/>
+
+            <TextBox x:ConnectionId='12' x:Name="boxTtsRaw" Height="250" Width="350" TextWrapping="Wrap"
                      AcceptsReturn="True"
                      IsReadOnly="False"
                      Text= ""
                      IsSpellCheckEnabled="True"
                      HorizontalAlignment="Center" VerticalAlignment="Top"
-                     Margin="0 5"/> <!--Cancellation-Token-Source stops async tasks.-->
+                     Margin="0 5"/>
         </StackPanel>
-        
-        <!--2nd row--> 
-        <StackPanel Grid.Row="1" Orientation="Horizontal">
+
+        <!--3rd row-->
+        <StackPanel Grid.Row="2" Orientation="Horizontal">
             <AppBarButton x:ConnectionId='6'  x:Name="BtnRepeatMediaOutAsync" Label="Play" Icon="play"                    
                                                                
-                           Margin="0 0 0 10" Height="54"/> <!--Command="{Binding RepeatMediaOutAsyncCommand}"-->
+                           Margin="0 0 0 10" Height="54"/>
+            <!--Command="{Binding RepeatMediaOutAsyncCommand}"-->
 
             <AppBarButton x:ConnectionId='7'  x:Name="BtnStopPauseRepeatMediaOutAsync" Label="Stop" Icon="Stop"
                                                                        
-                          Visibility="Collapsed" Margin="0 0 0 10" Height="54"/> <!--Test commit n push through Git Bash-->     
-                        
+                          Visibility="Collapsed" Margin="0 0 0 10" Height="54"/>
+            <!--Test commit n push through Git Bash-->
+
             <ToggleSwitch x:ConnectionId='8' x:Name="TgsRepeats" Header="         Repeat" IsOn="True" Margin="5 10 0 0" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89"/>
             <TextBox x:ConnectionId='9' x:Name="boxRepetitions" Text="3"  Header="    Times" FontSize="12" Margin="-50,0,66,0" Height="50" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
             <TextBox x:ConnectionId='10' x:Name="boxInterval" Text="3" Header="   Intervals (Mins)" FontSize="12" Height="50" Margin="-55,0,-43,0" />
             <MediaElement x:ConnectionId='11' x:Name="uiMediaElement"/>
         </StackPanel>
 
-        <!--3rd row-->
-        <StackPanel x:ConnectionId='2' x:Name="stpStatus" Grid.Row="2" Orientation="Horizontal" 
+        <!--4th row-->
+        <StackPanel x:ConnectionId='2' x:Name="stpStatus" Grid.Row="3" Orientation="Horizontal" 
                     Visibility="Collapsed" Background="Black" Height="Auto">
             <TextBlock Text="Status" FontSize="12" Foreground="WhiteSmoke"
                     Height="Auto" Margin="10 0 5 0"/>
             <TextBlock x:ConnectionId='5' x:Name="tbStatus" Text="0" FontSize="12" Foreground="WhiteSmoke"
                     Height="Auto" Width="Auto" Margin="10 0 5 0"/>
         </StackPanel>
-        
-        <!--4th row-->
-       <StackPanel x:ConnectionId='3' x:Name="stpSpeechSettings" Grid.Row="3" Orientation="Horizontal" 
+
+        <!--5th row-->
+        <StackPanel x:ConnectionId='3' x:Name="stpSpeechSettings" Grid.Row="4" Orientation="Horizontal" 
                   Visibility="Collapsed"  Height="Auto">
             <TextBlock Text="Voice Gender" FontSize="12" 
                        VerticalAlignment="Center" Margin="20 6 0 0" />
@@ -75,21 +89,22 @@
         </StackPanel>
 
 
-        <!--5th row Slider timer interval--><!--Need to put a fifth row in grid definitions to use this
-        <StackPanel Grid.Row="4" Margin="0 10" Height="Auto">-->
-            <!--<ToggleButton x:Name="TgbCommandModeOn"  Click="TgbCommandModeOn_Click"
+        <!--6th row Slider timer interval-->
+        <!--Need to put a fifth row in grid definitions to use this
+        <StackPanel Grid.Row="5" Margin="0 10" Height="Auto">-->
+        <!--<ToggleButton x:Name="TgbCommandModeOn"  Click="TgbCommandModeOn_Click"
                           Width="40" Height="40" HorizontalAlignment="Center"/>
             <Slider x:Name="SdrSpeakAsyncProgress" 
                     Value="0"  Pivot.SlideInAnimationGroup="GroupOne"
                     TickFrequency="5"
                     Margin="5 0 5 5"/>-->
-            <!--<AppBarButton x:Name="BtnStopAsync" Label="Stop" Icon="Stop"
+        <!--<AppBarButton x:Name="BtnStopAsync" Label="Stop" Icon="Stop"
                           Click="BtnStopPauseRepeatMediaOutAsync_Click"
                           Visibility="Collapsed" Margin="0 0 0 10" Height="54"/>-->
-            <!--Test commit n push through Git Bash-->
-            <!--<ToggleButton x:Name="TgbCommandModeOff" Click="TgbCommandModeOff_Click" 
+        <!--Test commit n push through Git Bash-->
+        <!--<ToggleButton x:Name="TgbCommandModeOff" Click="TgbCommandModeOff_Click" 
                 Width="40" Height="40" HorizontalAlignment="Center"/>-->
-        <!--</StackPanel>-->      
+        <!--</StackPanel>-->
     </Grid>
 </UserControl>
 

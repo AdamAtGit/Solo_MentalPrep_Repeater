@@ -205,7 +205,7 @@ namespace MentalPrepApp.Views.UserControls.AppFxs.Nested
                 //    btnTestPlayBig.Focus(FocusState.Pointer);
                 //    #endregion
                 //}
-                //#region  refresh Titles and Title Details of Title just Added
+                #region  refresh Titles and Title Details of Title just Added
                 //TODO: ARS- Get last PK Id Inserted
                 //using (var context = new PRSappContext())
                 //{

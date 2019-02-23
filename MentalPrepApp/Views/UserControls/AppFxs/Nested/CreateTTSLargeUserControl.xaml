@@ -3,7 +3,7 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:MentalPrepApp.Views.UserControls.AppFxs.Nested"
-  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     
     Loaded="UserControl_Loaded" HorizontalAlignment="Left">
@@ -11,35 +11,35 @@
     d:DesignHeight="640"
     d:DesignWidth="760"-->
 
-    <Grid Width="730" VerticalAlignment="Stretch" Background="WhiteSmoke">
-        <Grid.ColumnDefinitions>
-            <!--640-->
+    <Grid Width="360" Height="122" VerticalAlignment="Stretch" Background="WhiteSmoke">
+        <!--<Grid.ColumnDefinitions>
+            --><!--640--><!--
             <ColumnDefinition Width="*"/>
-            <!--360-->
+            --><!--360--><!--
             <ColumnDefinition Width="*"/>
-            <!--360-->
-        </Grid.ColumnDefinitions>
+            --><!--360--><!--
+        </Grid.ColumnDefinitions>-->
         <Grid.RowDefinitions>
             <!--640-->
             <!---->
-            <RowDefinition Height="2.5*"/>
+            <!--<RowDefinition Height="2.5*"/>-->
             <!---->
-            <RowDefinition Height="2*"/>
+            <!--<RowDefinition Height="2*"/>
+            --><!----><!--
+            <RowDefinition Height="4*"/>-->
             <!---->
-            <RowDefinition Height="4*"/>
-            <!---->
-            <RowDefinition Height="1*"/>
+            <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>
 
         <!--Create PlayLists Panel-->
         <StackPanel x:Name="pan0" Background="#7d7d7d"                  
-                    VerticalAlignment="Stretch" Grid.ColumnSpan="2">
+                    VerticalAlignment="Stretch">
 
             <TextBlock Text="Create Text To Speak" FontSize="19"
                        Margin="0 3 0 3" HorizontalAlignment="Center"/>
 
             <StackPanel x:Name="TitleInputGroup1Panel" Orientation="Horizontal"
-                        Visibility="Visible"
+                       Visibility="Collapsed"
                         Height="60" Width="725">
                 <TextBox Name="boxAddTitleNameBig" Header=" Name" 
                      Height="60" Width="175"
@@ -61,7 +61,7 @@
             </StackPanel>
 
             <StackPanel x:Name="TitleInputGroup2Panel" Orientation="Horizontal" Margin="5"
-                        Visibility="Visible"
+                        Visibility="Collapsed"
                         Height="60" Width="795">
                 <ComboBox x:Name="cboMediaUsesID" Header="Use this for" 
                       Width="200" Margin="5 0 10 0" >
@@ -113,7 +113,8 @@
                         Margin="0,10,0,0"
                        HorizontalAlignment="Center"/>
         </StackPanel>
-        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Background="Gray">
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Background="Gray"
+                    Visibility="Collapsed">
             <TextBox x:Name="boxTtsRawBig"
                      IsSpellCheckEnabled="True" AcceptsReturn="True"
                      Background="WhiteSmoke"
@@ -123,7 +124,8 @@
 
         <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch"
                        Grid.Row="3" Grid.ColumnSpan="2"
-                       Background="#7d7d7d">
+                       Background="#7d7d7d"
+                    Visibility="Collapsed">
 
             <AppBarButton x:Name="btnAddTitleBigAsync"                           
                               Tag="btnAddTitleBigAsync"

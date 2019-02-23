@@ -240,3 +240,4 @@ C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrep
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\Views\UserControls\AppFxs\Nested\CreateTTSLargeUserControl.g.cs
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\Views\UserControls\AppFxs\Nested\CreateTTSLargeUserControl.xaml
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\Views\UserControls\AppFxs\Nested\CreateTTSLargeUserControl.xbf
+C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\UserControls\AppFxs\Nested\CreateTTSLargeUserControl.xbf

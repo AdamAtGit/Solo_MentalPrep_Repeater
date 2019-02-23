@@ -1,0 +1,149 @@
+﻿<UserControl x:ConnectionId='1'
+    x:Class="MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MentalPrepApp.Views.UserControls.AppFxs.Nested"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    
+                                HorizontalAlignment="Left">
+    <!--mc:Ignorable="d"
+    d:DesignHeight="640"
+    d:DesignWidth="760"-->
+
+    <Grid Width="360" Height="122" VerticalAlignment="Stretch" Background="WhiteSmoke">
+        <!--<Grid.ColumnDefinitions>
+            --><!--640--><!--
+            <ColumnDefinition Width="*"/>
+            --><!--360--><!--
+            <ColumnDefinition Width="*"/>
+            --><!--360--><!--
+        </Grid.ColumnDefinitions>-->
+        <Grid.RowDefinitions>
+            <!--640-->
+            <!---->
+            <!--<RowDefinition Height="2.5*"/>-->
+            <!---->
+            <!--<RowDefinition Height="2*"/>
+            --><!----><!--
+            <RowDefinition Height="4*"/>-->
+            <!---->
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <!--Create PlayLists Panel-->
+        <StackPanel x:ConnectionId='2' x:Name="pan0" Background="#7d7d7d"                  
+                    VerticalAlignment="Stretch">
+
+            <TextBlock Text="Create Text To Speak" FontSize="19"
+                       Margin="0 3 0 3" HorizontalAlignment="Center"/>
+
+            <StackPanel x:ConnectionId='11' x:Name="TitleInputGroup1Panel" Orientation="Horizontal"
+                       Visibility="Collapsed"
+                        Height="60" Width="725">
+                <TextBox x:ConnectionId='15' Name="boxAddTitleNameBig" Header=" Name" 
+                     Height="60" Width="175"
+                     IsSpellCheckEnabled="True"
+                     Margin="10 0 5 0"/>
+                <TextBox x:ConnectionId='16' Name="boxTitleCat" Header=" Category" 
+                       Height="60" Width="165"
+                     IsSpellCheckEnabled="True"
+                     Margin="5 0 5 0"/>
+                <TextBox x:ConnectionId='17' Name="boxTitleSubCat" Header=" Sub Category" 
+                     Tag="boxTitleSubCat" 
+                     IsSpellCheckEnabled="True"
+                     Height="60" Width="160" Margin="5 0 5 0"/>
+
+                <TextBox x:ConnectionId='18' Name="boxShortDescription" Header=" Short Description"    
+                     Height="60" Width="160"
+                     IsSpellCheckEnabled="True"
+                     Margin="5 0 5 0"/>
+            </StackPanel>
+
+            <StackPanel x:ConnectionId='12' x:Name="TitleInputGroup2Panel" Orientation="Horizontal" Margin="5"
+                        Visibility="Collapsed"
+                        Height="60" Width="795">
+                <ComboBox x:ConnectionId='13' x:Name="cboMediaUsesID" Header="Use this for" 
+                      Width="200" Margin="5 0 10 0" >
+                    <ComboBoxItem Content="Mental Preperation"/>
+                    <ComboBoxItem Content="Add to a Playlist"/>
+                    <ComboBoxItem Content="Daily Task"/>
+                    <ComboBoxItem Content="Getting Started"/>
+                    <ComboBoxItem Content="Motivation"/>
+                    <ComboBoxItem Content="Helpful Sayings"/>
+                    <ComboBoxItem Content="Mood Setter"/>
+                    <ComboBoxItem Content="Memorizing"/>
+                    <ComboBoxItem Content="Remembering"/>
+                    <ComboBoxItem Content="Talking"/>
+                    <ComboBoxItem Content="Relaxation"/>
+                    <ComboBoxItem Content="Quiz"/>
+                    <ComboBoxItem Content="Short Story"/>
+                    <ComboBoxItem Content="Fun Crazy Talk"/>
+                </ComboBox>
+
+                <ComboBox x:ConnectionId='14' x:Name="cboPlayListAppFx" Header="Mini App Helper" 
+                      Width="200" Margin="5 0 10 0">
+                    <ComboBoxItem Content="Periodic Reminder"/>
+                    <ComboBoxItem Content="T-30 CountDown"/>
+                    <ComboBoxItem Content="Check-Cycle"/>
+                    <ComboBoxItem Content="Force-Talkv"/>
+                    <ComboBoxItem Content="Bit-by-bit Writer"/>
+                    <ComboBoxItem Content="Quiz"/>
+                    <ComboBoxItem Content="Quiz-Pop"/>
+                    <ComboBoxItem Content="Quiz-Interactive"/>
+                    <ComboBoxItem Content="Memory Ingrain"/>
+                    <ComboBoxItem Content="Rehearse with Images"/>
+                    <ComboBoxItem Content="Say-It-Crazy"/>
+                </ComboBox>
+            </StackPanel>
+        </StackPanel>
+        <StackPanel HorizontalAlignment="Stretch"
+                    Grid.Row="1" Grid.ColumnSpan="2"
+                    Background="#7d7d7d">
+            <Button x:ConnectionId='8' x:Name="btnRecognitionTtsRawBigAsync"
+                 Margin="0 20 0 0" HorizontalAlignment="Center"
+                Height="Auto" Width="Auto"
+                BorderBrush="DarkGray">
+                <Image x:ConnectionId='10' x:Name="imgMicrophoneTapped"                      
+                   Source="/Assets/Misc/Mic-Icon-Bl-03.png"               
+                   Height="60" Width="60"
+                   Margin="0 0 0 0"/>
+            </Button>
+            <TextBlock x:ConnectionId='9' x:Name="tbStatus" Text="Tap Mic to start Dictating"
+                        Margin="0,10,0,0"
+                       HorizontalAlignment="Center"/>
+        </StackPanel>
+        <StackPanel Grid.Row="2" Grid.ColumnSpan="2" Background="Gray"
+                    Visibility="Collapsed">
+            <TextBox x:ConnectionId='7' x:Name="boxTtsRawBig"
+                     IsSpellCheckEnabled="True" AcceptsReturn="True"
+                     Background="WhiteSmoke"
+                     Height="260" Margin="5 5 5 5"/>
+            <!-- Header=" Text To Speak"-->
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch"
+                       Grid.Row="3" Grid.ColumnSpan="2"
+                       Background="#7d7d7d"
+                    Visibility="Collapsed">
+
+            <AppBarButton x:ConnectionId='3' x:Name="btnAddTitleBigAsync"                           
+                              Tag="btnAddTitleBigAsync"
+                              Icon="Add" Label="Add"
+                              Margin="2 0" />
+            <AppBarButton x:ConnectionId='4' x:Name="btnTestPlayBig"
+                              Icon="Play" Label="Test Play"
+                              Tag="btnTestPlayBig"
+                              Margin="2 0"/>
+            <MediaElement x:ConnectionId='5' x:Name="uiMediaElement"/>
+            <MediaTransportControls  Height="100" Margin="0,0,0,0" 
+                              VerticalAlignment="Stretch" 
+                              Width="250" Visibility="Collapsed"/>
+            <AppBarButton x:ConnectionId='6'                               
+                              Icon="Clear"  Label="Clear"
+                              Tag="btnClearAddBoxesBig"
+                              Margin="205 2 5 5"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
+

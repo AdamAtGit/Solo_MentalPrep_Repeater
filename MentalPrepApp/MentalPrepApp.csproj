@@ -129,6 +129,63 @@
   <ItemGroup>
     <Content Include="0_Notes\Git-Bash_InitializeLocal_Push2Remote.txt" />
     <Content Include="0_Notes\SideLoadSteps.txt" />
+    <Content Include="Assets\AV\PlayLibray\Audio\BackInHighLife.mp3" />
+    <Content Include="Assets\AV\PlayLibray\Audio\FightSong.mp3" />
+    <Content Include="Assets\AV\PlayLibray\Audio\HoneyImGood.mp3" />
+    <Content Include="Assets\AV\PlayLibray\Audio\Issues.mp3" />
+    <Content Include="Assets\AV\PlayLibray\Audio\Jessie.mp3" />
+    <Content Include="Assets\AV\PlayLibray\Audio\Mother.mp3" />
+    <Content Include="Assets\AV\PlayLibray\Audio\Relax2Sleep.mp3" />
+    <Content Include="Assets\AV\PlayLibray\Audio\Thunder.m4a" />
+    <Content Include="Assets\AV\PlayLibray\Audio\Thunderstruck.mp3" />
+    <Content Include="Assets\AV\PlayLibray\Audio\TookAPillinIbiza.mp3" />
+    <Content Include="Assets\AV\PlayLibray\Videos\FullMetJack_30s.WMV" />
+    <Content Include="Assets\Images\AdamPassProfile-01.png" />
+    <Content Include="Assets\Images\All-Three-01.png" />
+    <Content Include="Assets\Images\Camera-Icon-Black-01.png" />
+    <Content Include="Assets\Images\Camera-Icon-Wh-01.png" />
+    <Content Include="Assets\Images\Camera-Icon-Wh-Zoomed-01.png" />
+    <Content Include="Assets\Images\Mic-Icon-Bl-01.png" />
+    <Content Include="Assets\Images\Mic-Icon-Bl-03.png" />
+    <Content Include="Assets\Images\Mic-Icon-Colorful-01.png" />
+    <Content Include="Assets\Images\Mic-Icon-Wh-02.png" />
+    <Content Include="Assets\Images\Mic-Icon_wh-01.png" />
+    <Content Include="Assets\Images\Music-Icon-Wh-100x-04.png" />
+    <Content Include="Assets\Images\Music-Icon-WhDodgerBlue-01.png" />
+    <Content Include="Assets\Images\Play-Icon-Red-01.png" />
+    <Content Include="Assets\Images\PRS_Logo_Scale-100-70x70.png" />
+    <Content Include="Assets\Images\Video-Icon-bl-02.png" />
+    <Content Include="Assets\Images\Video-Icon-blueGray-01.png" />
+    <Content Include="Assets\Images\Video-Icon-DodgBlue-02.png" />
+    <Content Include="Assets\Images\Video-Icon-Orange-01.png" />
+    <Content Include="Assets\Images\Video-Icon-Wh-02.png" />
+    <Content Include="Assets\Images\Video-Icon-Wh-05.png" />
+    <Content Include="Assets\Images\Video-Play-Icon-DodgBlue-01.png" />
+    <Content Include="Assets\Misc\AdamPassProfile-01.png" />
+    <Content Include="Assets\Misc\All-Three-01.png" />
+    <Content Include="Assets\Misc\Camera-Icon-Black-01.png" />
+    <Content Include="Assets\Misc\Camera-Icon-Wh-01.png" />
+    <Content Include="Assets\Misc\Camera-Icon-Wh-Zoomed-01.png" />
+    <Content Include="Assets\Misc\Mic-Icon-Bl-01.png" />
+    <Content Include="Assets\Misc\Mic-Icon-Bl-03.png" />
+    <Content Include="Assets\Misc\Mic-Icon-Colorful-01.png" />
+    <Content Include="Assets\Misc\Mic-Icon-Wh-02.png" />
+    <Content Include="Assets\Misc\Mic-Icon_wh-01.png" />
+    <Content Include="Assets\Misc\mic-Wh-Bl-3-Active.png" />
+    <Content Include="Assets\Misc\Mic-WhBlBlu-Cmd-Active.png" />
+    <Content Include="Assets\Misc\Mic-WhBlBlu-Cmd-Wait.png" />
+    <Content Include="Assets\Misc\mic-WhBlOra-3-Active.png" />
+    <Content Include="Assets\Misc\Mic-WhBlOra-3-Wait.png" />
+    <Content Include="Assets\Misc\Music-Icon-Wh-100x-04.png" />
+    <Content Include="Assets\Misc\Music-Icon-WhDodgerBlue-01.png" />
+    <Content Include="Assets\Misc\Play-Icon-Red-01.png" />
+    <Content Include="Assets\Misc\Video-Icon-bl-02.png" />
+    <Content Include="Assets\Misc\Video-Icon-blueGray-01.png" />
+    <Content Include="Assets\Misc\Video-Icon-DodgBlue-02.png" />
+    <Content Include="Assets\Misc\Video-Icon-Orange-01.png" />
+    <Content Include="Assets\Misc\Video-Icon-Wh-02.png" />
+    <Content Include="Assets\Misc\Video-Icon-Wh-05.png" />
+    <Content Include="Assets\Misc\Video-Play-Icon-DodgBlue-01.png" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
@@ -174,7 +231,11 @@
       <Version>6.1.9</Version>
     </PackageReference>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Assets\AV\PlayLibray\PlayLists\Mood\" />
+    <Folder Include="Assets\AV\PlayLibray\PlayLists\Out\" />
+    <Folder Include="Assets\AV\PlayLibray\PlayLists\WorkOut\" />
+  </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>
   </PropertyGroup>
