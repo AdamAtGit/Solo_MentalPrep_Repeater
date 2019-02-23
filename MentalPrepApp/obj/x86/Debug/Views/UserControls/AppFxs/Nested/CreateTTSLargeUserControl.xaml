@@ -11,7 +11,7 @@
     d:DesignHeight="640"
     d:DesignWidth="760"-->
 
-    <Grid Width="360" Height="122" VerticalAlignment="Stretch" Background="WhiteSmoke">
+    <Grid Width="360" Height="322" VerticalAlignment="Stretch" Background="WhiteSmoke">
         <!--<Grid.ColumnDefinitions>
             --><!--640--><!--
             <ColumnDefinition Width="*"/>
@@ -22,11 +22,11 @@
         <Grid.RowDefinitions>
             <!--640-->
             <!---->
-            <!--<RowDefinition Height="2.5*"/>-->
+            <RowDefinition Height="2.5*"/>
             <!---->
-            <!--<RowDefinition Height="2*"/>
-            --><!----><!--
-            <RowDefinition Height="4*"/>-->
+            <RowDefinition Height="2*"/>
+            <!---->
+            <RowDefinition Height="4*"/>
             <!---->
             <RowDefinition Height="Auto"/>
         </Grid.RowDefinitions>

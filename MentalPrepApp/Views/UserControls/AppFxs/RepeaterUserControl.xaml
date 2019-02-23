@@ -24,18 +24,35 @@
         <!--1st row-->
         <StackPanel Orientation="Horizontal">
             <ToggleSwitch x:Name="tgsCommandModeOn" Header="Command Mode" FontSize="12"
-                          Width="150" Margin="10 2 -25 0"
+                          Width="150" Margin="10 2 -27 0"
                           IsOn="False" IsEnabled="False"/>
-            <TextBox x:Name="boxTitleName" Text="Mental Prep" 
-                    HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 5"/>
+            <StackPanel>
+            <TextBlock Text="Mental Prep" FontSize="16"              
+                     HorizontalAlignment="Center" VerticalAlignment="Top"
+                     Margin="0 3 0 2"/>
+            <TextBlock x:Name="TbTitleName" FontSize="12.5"
+                       Text="Create &amp; Repeat" 
+                     HorizontalAlignment="Center"  Margin="0 1"/>
+           </StackPanel>
         </StackPanel>
 
         <!--2nd row-->
-        <StackPanel Grid.Row="1" HorizontalAlignment="Center">
-            
-            <ucnested:CreateTTSLargeUserControl/>
-
-            <TextBox x:Name="boxTtsRaw" Height="250" Width="350" TextWrapping="Wrap"
+        <StackPanel Grid.Row="1" VerticalAlignment="Top"
+                    HorizontalAlignment="Stretch" Background="Gray">
+            <Button x:Name="btnRecognitionTtsRawBigAsync"
+                        Margin="0 8 0 0" HorizontalAlignment="Center"
+                        Height="Auto" Width="Auto"
+                        BorderBrush="DarkGray">
+                <Image x:Name="imgMicrophoneTapped"                      
+                           Source="/Assets/Misc/Mic-Icon-Bl-03.png"               
+                            Height="50" Width="50" Margin="0 0 0 0"/>
+            </Button>
+            <TextBlock x:Name="tbRecogStatus" FontSize="12.5"
+                           Text="Tap Mic to start Dictating"
+                           Margin="0,5,0,0"
+                           HorizontalAlignment="Center"/>
+            <TextBox x:Name="boxTtsRawBig" Height="230" Width="350" 
+                     TextWrapping="Wrap"
                      AcceptsReturn="True"
                      IsReadOnly="False"
                      Text= ""
@@ -43,6 +60,17 @@
                      HorizontalAlignment="Center" VerticalAlignment="Top"
                      Margin="0 5"/>
         </StackPanel>
+        <!--<StackPanel Background="Gray" Grid.Row="1">-->
+            <!--<TextBox x:Name="boxTtsRawBig"
+                     IsSpellCheckEnabled="True" AcceptsReturn="True"
+                     Background="WhiteSmoke"
+                     Height="260" Margin="5 5 5 5"/>-->
+
+         
+        <!--</StackPanel>-->
+       
+      
+          
 
         <!--3rd row-->
         <StackPanel Grid.Row="2" Orientation="Horizontal">
@@ -54,7 +82,7 @@
             <AppBarButton  x:Name="BtnStopPauseRepeatMediaOutAsync" Label="Stop" Icon="Stop"
                           Click="BtnStopPauseRepeatMediaOutAsync_Click"
                           Visibility="Collapsed" Margin="0 0 0 10" Height="54"/>
-            <!--Test commit n push through Git Bash-->
+          
 
             <ToggleSwitch x:Name="TgsRepeats" Header="         Repeat" IsOn="True" Margin="5 10 0 0" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89"/>
             <TextBox x:Name="boxRepetitions" Text="3"  Header="    Times" FontSize="12" Margin="-50,0,66,0" Height="50" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
@@ -88,22 +116,16 @@
             </ComboBox>
         </StackPanel>
 
-
         <!--6th row Slider timer interval-->
-        <!--Need to put a fifth row in grid definitions to use this
-        <StackPanel Grid.Row="5" Margin="0 10" Height="Auto">-->
-        <!--<ToggleButton x:Name="TgbCommandModeOn"  Click="TgbCommandModeOn_Click"
-                          Width="40" Height="40" HorizontalAlignment="Center"/>
+        <StackPanel Grid.Row="5" Margin="0 10" Height="Auto"
+                    Visibility="Collapsed">
             <Slider x:Name="SdrSpeakAsyncProgress" 
                     Value="0"  Pivot.SlideInAnimationGroup="GroupOne"
                     TickFrequency="5"
-                    Margin="5 0 5 5"/>-->
-        <!--<AppBarButton x:Name="BtnStopAsync" Label="Stop" Icon="Stop"
+                    Margin="5 0 5 5"/>
+            <AppBarButton x:Name="BtnStopAsync" Label="Stop" Icon="Stop"
                           Click="BtnStopPauseRepeatMediaOutAsync_Click"
-                          Visibility="Collapsed" Margin="0 0 0 10" Height="54"/>-->
-        <!--Test commit n push through Git Bash-->
-        <!--<ToggleButton x:Name="TgbCommandModeOff" Click="TgbCommandModeOff_Click" 
-                Width="40" Height="40" HorizontalAlignment="Center"/>-->
-        <!--</StackPanel>-->
+                          Visibility="Collapsed" Margin="0 0 0 10" Height="54"/>
+        </StackPanel>
     </Grid>
 </UserControl>

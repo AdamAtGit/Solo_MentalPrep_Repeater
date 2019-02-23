@@ -1,4 +1,5 @@
 ﻿using MentalPrepApp.Classes.Extensions;
+using MentalPrepApp.SpeechClasses;
 using System;
 using System.Collections;
 using System.Diagnostics;
@@ -16,23 +17,51 @@ namespace MentalPrepApp.Views.UserControls.AppFxs
 {
     public sealed partial class RepeaterUserControl : UserControl
     {
-        //Repeater Dispatcher Timer
+        // For App Life Cycle and Db
+        public string CurrentUserName { get; set; }
+        public int CurrentUserId { get; set; }
+        public int SelectedTitleId { get; set; }
+        public int EditTitleId { get; set; }
+        public int DeleteTitleId { get; set; }
+        //public List<Title> TitleListIds { get; set; }
+
+        // Repeater Dispatcher Timer
         DispatcherTimer repeatDispTimer = new DispatcherTimer();
         TimeSpan interval;//hh, mm, ss
         int timesToTick;
         int i = 0;
         int repetitions;
        
-        //Media Output Async 
+
+
+        // Media Output Async 
         string ttsRaw = string.Empty;
+        
+     
+
+        //Speech Synth and Recogn
+        public string SpeechInputResult { get; set; }
 
         //Speech User Settings
-      
+
         public string VoiceGender = "female";
 
         public RepeaterUserControl()
         {
             this.InitializeComponent();
+
+            //TODO: ARS-Get user's Name for Interactive.
+            CurrentUserName = "Adam";
+
+            // Wire up Start Recognizing Routed Event Handlers
+            btnRecognitionTtsRawBigAsync.Click += new RoutedEventHandler(StartRecognizing_Click);
+
+            // Wire up Synthesis Test Plays Routed Event Handlers
+            //btnTestPlayBig.Click += new RoutedEventHandler(TestPlayBigAsync_Click);
+
+            // Wire up Add Title Save Changes Async to ORMs
+            //btnAddTitleBigAsync.Click += new RoutedEventHandler(AddTitleBigAsync_Click);
+
             TimerSetUp();
             cboVoiceGender.SelectedIndex = cboVoiceGender.Items.Count - 1;
         }
@@ -170,7 +199,7 @@ namespace MentalPrepApp.Views.UserControls.AppFxs
                 }
 
                 BtnRepeatMediaOutAsync.Foreground = new SolidColorBrush(Windows.UI.Colors.Orange);
-                ttsRaw = boxTtsRaw.Text.Trim();
+               ttsRaw = boxTtsRawBig.Text.Trim();
                 try
                 {
                     await SpeakTextAsync(ttsRaw, uiMediaElement);
@@ -204,7 +233,7 @@ namespace MentalPrepApp.Views.UserControls.AppFxs
             {
                 //Debug.Write("Hit tgsReapeats.IsOn//when is false");
                 BtnRepeatMediaOutAsync.Foreground = new SolidColorBrush(Windows.UI.Colors.Orange);
-                ttsRaw = boxTtsRaw.Text.Trim();
+                ttsRaw = boxTtsRawBig.Text.Trim();
                 try
                 {
                     await SpeakTextAsync(ttsRaw, uiMediaElement);
@@ -215,6 +244,49 @@ namespace MentalPrepApp.Views.UserControls.AppFxs
                 }
             }        
         }
+
+        #region Speech Recognition
+        private async void StartRecognizing_Click(object sender, RoutedEventArgs e)
+        {
+            //test change for commi
+            // Create an instance of SpeechRecognizer.
+            var speechRecognizer = new SpeechRecognizer();
+
+            // Set timeout settings.
+            speechRecognizer.Timeouts.InitialSilenceTimeout = TimeSpan.FromSeconds(8.0);
+            speechRecognizer.Timeouts.BabbleTimeout = TimeSpan.FromSeconds(6.0);
+            speechRecognizer.Timeouts.EndSilenceTimeout = TimeSpan.FromSeconds(3.2);
+
+            // Compile the dictation grammar by default.
+            await speechRecognizer.CompileConstraintsAsync();
+
+            //Inform user it's now listening
+            tbRecogStatus.Text = "...listening";
+            SolidColorBrush darkGray = new SolidColorBrush(Colors.DarkGray);
+            btnRecognitionTtsRawBigAsync.BorderBrush = new SolidColorBrush(Colors.DarkOrange);
+            // Start recognition.
+            SpeechRecognitionResult speechRecognitionResult =
+                        await speechRecognizer.RecognizeAsync();
+            //await speechRecognizer.RecognizeWithUIAsync();
+
+
+
+            // Do something with the recognition result.
+            SpeechInputResult = speechRecognitionResult.Text;
+            boxTtsRawBig.Text += SpeechInputResult;
+
+            //Inform user it has finished listening and to click the Mic to continue
+            tbRecogStatus.Text = "listening stopped. Tap the Mic to continue";
+            btnRecognitionTtsRawBigAsync.BorderBrush = darkGray;
+
+            //var messageDialog = new Windows.UI.Popups.MessageDialog(speechRecognitionResult.Text, "Text spoken");
+            //await messageDialog.ShowAsync();
+        }
+        #endregion
+
+
+
+
 
         #region User Speech Settings
         private void cboVoiceGender_SelectionChanged(object sender, SelectionChangedEventArgs e)
@@ -282,6 +354,41 @@ namespace MentalPrepApp.Views.UserControls.AppFxs
                 stpStatus.Visibility = Visibility.Collapsed;
             }
             BtnRepeatMediaOutAsync.Foreground = new SolidColorBrush(Windows.UI.Colors.Black);           
-        }       
+        }
+
+
     }
+
+    /////Ends MainPage partial Class and starts a static 'Top Level'(non-nested) class in same NameSpace
+    //This below static class is an extension method for MediaElement
+    static class MediaElementExtensions
+    {
+        public static async Task PlayStreamAsync(
+          this MediaElement mediaElement,
+          IRandomAccessStream stream,
+          bool disposeStream = true)
+        {
+            // bool is irrelevant here, just using this to flag task completion.
+            TaskCompletionSource<bool> taskCompleted = new TaskCompletionSource<bool>();
+
+            // Note that the MediaElement needs to be in the UI tree for events
+            // like MediaEnded to fire.
+            RoutedEventHandler endOfPlayHandler = (s, e) =>
+            {
+                if (disposeStream)
+                {
+                    stream.Dispose();
+                }
+                taskCompleted.SetResult(true);
+            };
+            mediaElement.MediaEnded += endOfPlayHandler;
+
+            mediaElement.SetSource(stream, string.Empty);
+            mediaElement.Play();
+
+            await taskCompleted.Task;
+            mediaElement.MediaEnded -= endOfPlayHandler;
+        }
+    }
+
 }

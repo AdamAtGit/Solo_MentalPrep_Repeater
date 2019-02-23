@@ -1,5 +1,7 @@
 Git-Bash_InitializeLocal_Push2Remote.txt
 
+**Remote Repo is: Solo_MentalPrep_Repeater
+
 1. Solution has to be closed, and VS studio too to be safe
 2. Start Menu > Git-Bash
 ***Caveats 

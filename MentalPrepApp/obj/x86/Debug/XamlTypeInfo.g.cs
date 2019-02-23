@@ -195,10 +195,10 @@ namespace MentalPrepApp.MentalPrepApp_XamlTypeInfo
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
             _typeNameTable[3] = "MentalPrepApp.Views.Pages.ManagePage";
             _typeNameTable[4] = "MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl";
-            _typeNameTable[5] = "MentalPrepApp.Views.Pages.PlayPage";
-            _typeNameTable[6] = "MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl";
-            _typeNameTable[7] = "String";
-            _typeNameTable[8] = "Int32";
+            _typeNameTable[5] = "String";
+            _typeNameTable[6] = "Int32";
+            _typeNameTable[7] = "MentalPrepApp.Views.Pages.PlayPage";
+            _typeNameTable[8] = "MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl";
             _typeNameTable[9] = "MentalPrepApp.Views.UserControls.AppFxs.Nested.DictationUserControl";
 
             _typeTable = new global::System.Type[10];
@@ -207,10 +207,10 @@ namespace MentalPrepApp.MentalPrepApp_XamlTypeInfo
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
             _typeTable[3] = typeof(global::MentalPrepApp.Views.Pages.ManagePage);
             _typeTable[4] = typeof(global::MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl);
-            _typeTable[5] = typeof(global::MentalPrepApp.Views.Pages.PlayPage);
-            _typeTable[6] = typeof(global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl);
-            _typeTable[7] = typeof(global::System.String);
-            _typeTable[8] = typeof(global::System.Int32);
+            _typeTable[5] = typeof(global::System.String);
+            _typeTable[6] = typeof(global::System.Int32);
+            _typeTable[7] = typeof(global::MentalPrepApp.Views.Pages.PlayPage);
+            _typeTable[8] = typeof(global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl);
             _typeTable[9] = typeof(global::MentalPrepApp.Views.UserControls.AppFxs.Nested.DictationUserControl);
         }
 
@@ -249,8 +249,8 @@ namespace MentalPrepApp.MentalPrepApp_XamlTypeInfo
         private object Activate_0_MainPage() { return new global::MentalPrepApp.MainPage(); }
         private object Activate_3_ManagePage() { return new global::MentalPrepApp.Views.Pages.ManagePage(); }
         private object Activate_4_RepeaterUserControl() { return new global::MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl(); }
-        private object Activate_5_PlayPage() { return new global::MentalPrepApp.Views.Pages.PlayPage(); }
-        private object Activate_6_CreateTTSLargeUserControl() { return new global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl(); }
+        private object Activate_7_PlayPage() { return new global::MentalPrepApp.Views.Pages.PlayPage(); }
+        private object Activate_8_CreateTTSLargeUserControl() { return new global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl(); }
         private object Activate_9_DictationUserControl() { return new global::MentalPrepApp.Views.UserControls.AppFxs.Nested.DictationUserControl(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
@@ -288,20 +288,6 @@ namespace MentalPrepApp.MentalPrepApp_XamlTypeInfo
             case 4:   //  MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl
                 userType = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
                 userType.Activator = Activate_4_RepeaterUserControl;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 5:   //  MentalPrepApp.Views.Pages.PlayPage
-                userType = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
-                userType.Activator = Activate_5_PlayPage;
-                userType.SetIsLocalType();
-                xamlType = userType;
-                break;
-
-            case 6:   //  MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl
-                userType = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_6_CreateTTSLargeUserControl;
                 userType.AddMemberName("CurrentUserName");
                 userType.AddMemberName("CurrentUserId");
                 userType.AddMemberName("SelectedTitleId");
@@ -312,12 +298,32 @@ namespace MentalPrepApp.MentalPrepApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 7:   //  String
+            case 5:   //  String
                 xamlType = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
                 break;
 
-            case 8:   //  Int32
+            case 6:   //  Int32
                 xamlType = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlSystemBaseType(typeName, type);
+                break;
+
+            case 7:   //  MentalPrepApp.Views.Pages.PlayPage
+                userType = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_7_PlayPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 8:   //  MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl
+                userType = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
+                userType.Activator = Activate_8_CreateTTSLargeUserControl;
+                userType.AddMemberName("CurrentUserName");
+                userType.AddMemberName("CurrentUserId");
+                userType.AddMemberName("SelectedTitleId");
+                userType.AddMemberName("EditTitleId");
+                userType.AddMemberName("DeleteTitleId");
+                userType.AddMemberName("SpeechInputResult");
+                userType.SetIsLocalType();
+                xamlType = userType;
                 break;
 
             case 9:   //  MentalPrepApp.Views.UserControls.AppFxs.Nested.DictationUserControl
@@ -331,62 +337,122 @@ namespace MentalPrepApp.MentalPrepApp_XamlTypeInfo
         }
 
 
-        private object get_0_CreateTTSLargeUserControl_CurrentUserName(object instance)
+        private object get_0_RepeaterUserControl_CurrentUserName(object instance)
+        {
+            var that = (global::MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl)instance;
+            return that.CurrentUserName;
+        }
+        private void set_0_RepeaterUserControl_CurrentUserName(object instance, object Value)
+        {
+            var that = (global::MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl)instance;
+            that.CurrentUserName = (global::System.String)Value;
+        }
+        private object get_1_RepeaterUserControl_CurrentUserId(object instance)
+        {
+            var that = (global::MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl)instance;
+            return that.CurrentUserId;
+        }
+        private void set_1_RepeaterUserControl_CurrentUserId(object instance, object Value)
+        {
+            var that = (global::MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl)instance;
+            that.CurrentUserId = (global::System.Int32)Value;
+        }
+        private object get_2_RepeaterUserControl_SelectedTitleId(object instance)
+        {
+            var that = (global::MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl)instance;
+            return that.SelectedTitleId;
+        }
+        private void set_2_RepeaterUserControl_SelectedTitleId(object instance, object Value)
+        {
+            var that = (global::MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl)instance;
+            that.SelectedTitleId = (global::System.Int32)Value;
+        }
+        private object get_3_RepeaterUserControl_EditTitleId(object instance)
+        {
+            var that = (global::MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl)instance;
+            return that.EditTitleId;
+        }
+        private void set_3_RepeaterUserControl_EditTitleId(object instance, object Value)
+        {
+            var that = (global::MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl)instance;
+            that.EditTitleId = (global::System.Int32)Value;
+        }
+        private object get_4_RepeaterUserControl_DeleteTitleId(object instance)
+        {
+            var that = (global::MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl)instance;
+            return that.DeleteTitleId;
+        }
+        private void set_4_RepeaterUserControl_DeleteTitleId(object instance, object Value)
+        {
+            var that = (global::MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl)instance;
+            that.DeleteTitleId = (global::System.Int32)Value;
+        }
+        private object get_5_RepeaterUserControl_SpeechInputResult(object instance)
+        {
+            var that = (global::MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl)instance;
+            return that.SpeechInputResult;
+        }
+        private void set_5_RepeaterUserControl_SpeechInputResult(object instance, object Value)
+        {
+            var that = (global::MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl)instance;
+            that.SpeechInputResult = (global::System.String)Value;
+        }
+        private object get_6_CreateTTSLargeUserControl_CurrentUserName(object instance)
         {
             var that = (global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl)instance;
             return that.CurrentUserName;
         }
-        private void set_0_CreateTTSLargeUserControl_CurrentUserName(object instance, object Value)
+        private void set_6_CreateTTSLargeUserControl_CurrentUserName(object instance, object Value)
         {
             var that = (global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl)instance;
             that.CurrentUserName = (global::System.String)Value;
         }
-        private object get_1_CreateTTSLargeUserControl_CurrentUserId(object instance)
+        private object get_7_CreateTTSLargeUserControl_CurrentUserId(object instance)
         {
             var that = (global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl)instance;
             return that.CurrentUserId;
         }
-        private void set_1_CreateTTSLargeUserControl_CurrentUserId(object instance, object Value)
+        private void set_7_CreateTTSLargeUserControl_CurrentUserId(object instance, object Value)
         {
             var that = (global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl)instance;
             that.CurrentUserId = (global::System.Int32)Value;
         }
-        private object get_2_CreateTTSLargeUserControl_SelectedTitleId(object instance)
+        private object get_8_CreateTTSLargeUserControl_SelectedTitleId(object instance)
         {
             var that = (global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl)instance;
             return that.SelectedTitleId;
         }
-        private void set_2_CreateTTSLargeUserControl_SelectedTitleId(object instance, object Value)
+        private void set_8_CreateTTSLargeUserControl_SelectedTitleId(object instance, object Value)
         {
             var that = (global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl)instance;
             that.SelectedTitleId = (global::System.Int32)Value;
         }
-        private object get_3_CreateTTSLargeUserControl_EditTitleId(object instance)
+        private object get_9_CreateTTSLargeUserControl_EditTitleId(object instance)
         {
             var that = (global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl)instance;
             return that.EditTitleId;
         }
-        private void set_3_CreateTTSLargeUserControl_EditTitleId(object instance, object Value)
+        private void set_9_CreateTTSLargeUserControl_EditTitleId(object instance, object Value)
         {
             var that = (global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl)instance;
             that.EditTitleId = (global::System.Int32)Value;
         }
-        private object get_4_CreateTTSLargeUserControl_DeleteTitleId(object instance)
+        private object get_10_CreateTTSLargeUserControl_DeleteTitleId(object instance)
         {
             var that = (global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl)instance;
             return that.DeleteTitleId;
         }
-        private void set_4_CreateTTSLargeUserControl_DeleteTitleId(object instance, object Value)
+        private void set_10_CreateTTSLargeUserControl_DeleteTitleId(object instance, object Value)
         {
             var that = (global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl)instance;
             that.DeleteTitleId = (global::System.Int32)Value;
         }
-        private object get_5_CreateTTSLargeUserControl_SpeechInputResult(object instance)
+        private object get_11_CreateTTSLargeUserControl_SpeechInputResult(object instance)
         {
             var that = (global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl)instance;
             return that.SpeechInputResult;
         }
-        private void set_5_CreateTTSLargeUserControl_SpeechInputResult(object instance, object Value)
+        private void set_11_CreateTTSLargeUserControl_SpeechInputResult(object instance, object Value)
         {
             var that = (global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl)instance;
             that.SpeechInputResult = (global::System.String)Value;
@@ -399,41 +465,77 @@ namespace MentalPrepApp.MentalPrepApp_XamlTypeInfo
 
             switch (longMemberName)
             {
+            case "MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl.CurrentUserName":
+                userType = (global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl");
+                xamlMember = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlMember(this, "CurrentUserName", "String");
+                xamlMember.Getter = get_0_RepeaterUserControl_CurrentUserName;
+                xamlMember.Setter = set_0_RepeaterUserControl_CurrentUserName;
+                break;
+            case "MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl.CurrentUserId":
+                userType = (global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl");
+                xamlMember = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlMember(this, "CurrentUserId", "Int32");
+                xamlMember.Getter = get_1_RepeaterUserControl_CurrentUserId;
+                xamlMember.Setter = set_1_RepeaterUserControl_CurrentUserId;
+                break;
+            case "MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl.SelectedTitleId":
+                userType = (global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl");
+                xamlMember = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlMember(this, "SelectedTitleId", "Int32");
+                xamlMember.Getter = get_2_RepeaterUserControl_SelectedTitleId;
+                xamlMember.Setter = set_2_RepeaterUserControl_SelectedTitleId;
+                break;
+            case "MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl.EditTitleId":
+                userType = (global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl");
+                xamlMember = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlMember(this, "EditTitleId", "Int32");
+                xamlMember.Getter = get_3_RepeaterUserControl_EditTitleId;
+                xamlMember.Setter = set_3_RepeaterUserControl_EditTitleId;
+                break;
+            case "MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl.DeleteTitleId":
+                userType = (global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl");
+                xamlMember = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlMember(this, "DeleteTitleId", "Int32");
+                xamlMember.Getter = get_4_RepeaterUserControl_DeleteTitleId;
+                xamlMember.Setter = set_4_RepeaterUserControl_DeleteTitleId;
+                break;
+            case "MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl.SpeechInputResult":
+                userType = (global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl");
+                xamlMember = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlMember(this, "SpeechInputResult", "String");
+                xamlMember.Getter = get_5_RepeaterUserControl_SpeechInputResult;
+                xamlMember.Setter = set_5_RepeaterUserControl_SpeechInputResult;
+                break;
             case "MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl.CurrentUserName":
                 userType = (global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl");
                 xamlMember = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlMember(this, "CurrentUserName", "String");
-                xamlMember.Getter = get_0_CreateTTSLargeUserControl_CurrentUserName;
-                xamlMember.Setter = set_0_CreateTTSLargeUserControl_CurrentUserName;
+                xamlMember.Getter = get_6_CreateTTSLargeUserControl_CurrentUserName;
+                xamlMember.Setter = set_6_CreateTTSLargeUserControl_CurrentUserName;
                 break;
             case "MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl.CurrentUserId":
                 userType = (global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl");
                 xamlMember = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlMember(this, "CurrentUserId", "Int32");
-                xamlMember.Getter = get_1_CreateTTSLargeUserControl_CurrentUserId;
-                xamlMember.Setter = set_1_CreateTTSLargeUserControl_CurrentUserId;
+                xamlMember.Getter = get_7_CreateTTSLargeUserControl_CurrentUserId;
+                xamlMember.Setter = set_7_CreateTTSLargeUserControl_CurrentUserId;
                 break;
             case "MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl.SelectedTitleId":
                 userType = (global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl");
                 xamlMember = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlMember(this, "SelectedTitleId", "Int32");
-                xamlMember.Getter = get_2_CreateTTSLargeUserControl_SelectedTitleId;
-                xamlMember.Setter = set_2_CreateTTSLargeUserControl_SelectedTitleId;
+                xamlMember.Getter = get_8_CreateTTSLargeUserControl_SelectedTitleId;
+                xamlMember.Setter = set_8_CreateTTSLargeUserControl_SelectedTitleId;
                 break;
             case "MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl.EditTitleId":
                 userType = (global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl");
                 xamlMember = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlMember(this, "EditTitleId", "Int32");
-                xamlMember.Getter = get_3_CreateTTSLargeUserControl_EditTitleId;
-                xamlMember.Setter = set_3_CreateTTSLargeUserControl_EditTitleId;
+                xamlMember.Getter = get_9_CreateTTSLargeUserControl_EditTitleId;
+                xamlMember.Setter = set_9_CreateTTSLargeUserControl_EditTitleId;
                 break;
             case "MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl.DeleteTitleId":
                 userType = (global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl");
                 xamlMember = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlMember(this, "DeleteTitleId", "Int32");
-                xamlMember.Getter = get_4_CreateTTSLargeUserControl_DeleteTitleId;
-                xamlMember.Setter = set_4_CreateTTSLargeUserControl_DeleteTitleId;
+                xamlMember.Getter = get_10_CreateTTSLargeUserControl_DeleteTitleId;
+                xamlMember.Setter = set_10_CreateTTSLargeUserControl_DeleteTitleId;
                 break;
             case "MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl.SpeechInputResult":
                 userType = (global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType)GetXamlTypeByName("MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl");
                 xamlMember = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlMember(this, "SpeechInputResult", "String");
-                xamlMember.Getter = get_5_CreateTTSLargeUserControl_SpeechInputResult;
-                xamlMember.Setter = set_5_CreateTTSLargeUserControl_SpeechInputResult;
+                xamlMember.Getter = get_11_CreateTTSLargeUserControl_SpeechInputResult;
+                xamlMember.Setter = set_11_CreateTTSLargeUserControl_SpeechInputResult;
                 break;
             }
             return xamlMember;
