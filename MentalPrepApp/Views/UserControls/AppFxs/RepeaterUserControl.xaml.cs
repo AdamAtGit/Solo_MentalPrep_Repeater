@@ -13,6 +13,8 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.Media.SpeechRecognition;
 
+using System.Data.SqlClient;
+
 namespace MentalPrepApp.Views.UserControls.AppFxs
 {
     public sealed partial class RepeaterUserControl : UserControl
