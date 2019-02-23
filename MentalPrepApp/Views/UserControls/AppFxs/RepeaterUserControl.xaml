@@ -1,0 +1,94 @@
+﻿<UserControl
+    x:Class="MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MentalPrepApp.Views.UserControls.AppFxs"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:vm="using:PRSapp.ViewModels">
+
+    <!--<UserControl.Resources>
+        <vm:RepeaterViewModel x:Key="repeaterViewModel"/>
+    </UserControl.Resources>-->
+    <Grid Height="640" Width="360" Background="Gray"
+          ><!--DataContext="{Binding Source={StaticResource repeaterViewModel}}"-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+            <TextBox x:Name="boxTitleName" Text="Mental Prep" 
+                    HorizontalAlignment="Center" VerticalAlignment="Top"
+                     Margin="0 5"/>
+            <TextBox x:Name="boxTtsRaw" Height="250" Width="350" TextWrapping="Wrap"
+                     AcceptsReturn="True"
+                     IsReadOnly="False"
+                     Text= ""
+                     IsSpellCheckEnabled="True"
+                     HorizontalAlignment="Center" VerticalAlignment="Top"
+                     Margin="0 5"/> <!--Cancellation-Token-Source stops async tasks.-->
+        </StackPanel>
+        
+        <!--2nd row--> 
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <AppBarButton  x:Name="BtnRepeatMediaOutAsync" Label="Play" Icon="play"                    
+                           Click="BtnRepeatMediaOutAsync_Click"
+                           Margin="0 0 0 10" Height="54"/> <!--Command="{Binding RepeatMediaOutAsyncCommand}"-->
+
+            <AppBarButton  x:Name="BtnStopPauseRepeatMediaOutAsync" Label="Stop" Icon="Stop"
+                          Click="BtnStopPauseRepeatMediaOutAsync_Click"
+                          Visibility="Collapsed" Margin="0 0 0 10" Height="54"/> <!--Test commit n push through Git Bash-->     
+                        
+            <ToggleSwitch x:Name="TgsRepeats" Header="         Repeat" IsOn="True" Margin="5 10 0 0" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89"/>
+            <TextBox x:Name="boxRepetitions" Text="3"  Header="    Times" FontSize="12" Margin="-50,0,66,0" Height="50" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
+            <TextBox x:Name="boxInterval" Text="3" Header="   Intervals (Mins)" FontSize="12" Height="50" Margin="-55,0,-43,0" />
+            <MediaElement x:Name="uiMediaElement"/>
+        </StackPanel>
+
+        <!--3rd row-->
+        <StackPanel x:Name="stpStatus" Grid.Row="2" Orientation="Horizontal" 
+                    Visibility="Collapsed" Background="Black" Height="Auto">
+            <TextBlock Text="Status" FontSize="12" Foreground="WhiteSmoke"
+                    Height="Auto" Margin="10 0 5 0"/>
+            <TextBlock x:Name="tbStatus" Text="0" FontSize="12" Foreground="WhiteSmoke"
+                    Height="Auto" Width="Auto" Margin="10 0 5 0"/>
+        </StackPanel>
+        
+        <!--4th row-->
+       <StackPanel x:Name="stpSpeechSettings" Grid.Row="3" Orientation="Horizontal" 
+                  Visibility="Collapsed"  Height="Auto">
+            <TextBlock Text="Voice Gender" FontSize="12" 
+                       VerticalAlignment="Center" Margin="20 6 0 0" />
+            <ComboBox x:Name="cboVoiceGender" FontSize="12" 
+                     SelectionChanged="cboVoiceGender_SelectionChanged"
+                      Height="27" Width="130" Margin="7 5 5 0">
+                <ComboBoxItem Background="DodgerBlue" Foreground="WhiteSmoke">
+                    <x:String>male</x:String>
+                </ComboBoxItem>
+                <ComboBoxItem Background="Magenta" Foreground="WhiteSmoke">
+                    <x:String>female</x:String>
+                </ComboBoxItem>
+            </ComboBox>
+        </StackPanel>
+
+
+        <!--5th row Slider timer interval--><!--Need to put a fifth row in grid definitions to use this
+        <StackPanel Grid.Row="4" Margin="0 10" Height="Auto">-->
+            <!--<ToggleButton x:Name="TgbCommandModeOn"  Click="TgbCommandModeOn_Click"
+                          Width="40" Height="40" HorizontalAlignment="Center"/>
+            <Slider x:Name="SdrSpeakAsyncProgress" 
+                    Value="0"  Pivot.SlideInAnimationGroup="GroupOne"
+                    TickFrequency="5"
+                    Margin="5 0 5 5"/>-->
+            <!--<AppBarButton x:Name="BtnStopAsync" Label="Stop" Icon="Stop"
+                          Click="BtnStopPauseRepeatMediaOutAsync_Click"
+                          Visibility="Collapsed" Margin="0 0 0 10" Height="54"/>-->
+            <!--Test commit n push through Git Bash-->
+            <!--<ToggleButton x:Name="TgbCommandModeOff" Click="TgbCommandModeOff_Click" 
+                Width="40" Height="40" HorizontalAlignment="Center"/>-->
+        <!--</StackPanel>-->      
+    </Grid>
+</UserControl>

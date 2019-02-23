@@ -1,0 +1,84 @@
+Git-Bash_InitializeLocal_Push2Remote.txt
+
+1. Solution has to be closed, and VS studio too to be safe
+2. Start Menu > Git-Bash
+***Caveats 
+A. use lower case in path even if its an upper case letter
+B. use forward slashes in Git Bash, back is for git-Cmd (I am guessing)
+C. Don't hit 'ctrl + c' to copy, just selecting copies to. 
+D. And right click in Bash for menu to Paste.
+
+3. You can in file explorer go to directory where the PRSapp Directory is > RClick 
+> Git Bash here > so you don't have to type in path in GitBash cmd window. either one .
+
+// When Git-Bash opens
+AdamSki@BlackHawk MINGW64 ~ (master)
+$
+
+
+4. Navigate to solution/project folder
+AdamSki@BlackHawk MINGW64 ~/source/repos/febon/april_master/PRSapp (master)
+$ ls
+PRSapp/  PRSapp.sln
+
+5. (optional) ls -l for details listing
+AdamSki@BlackHawk MINGW64 ~/source/repos/febon/april_master/PRSapp (master)
+$ ls -l
+total 8
+drwxr-xr-x 1 AdamSki 197121    0 Feb 15 05:26 PRSapp/
+-rw-r--r-- 1 AdamSki 197121 2227 Feb 14 14:50 PRSapp.sln
+
+6. Initialize local git Repo
+AdamSki@BlackHawk MINGW64 ~/source/repos/febon/april_master/PRSapp (master)
+$ git init
+Initialized empty Git repository in C:/Users/Flazz/source/repos/FebOn/april_master/PRSapp/.git/
+
+7. Now add readme files **Note this causes problems if you do it before or same time as creating remote repo
+AdamSki@BlackHawk MINGW64 ~/source/repos/febon/april_master/PRSapp (master)
+$ git add .
+
+8. Add local first commit and name it
+AdamSki@BlackHawk MINGW64 ~/source/repos/febon/april_master/PRSapp (master)
+$ git commit -m "first commit from git bash"
+[master (root-commit) 00d50ae] first commit from git bash
+ 419 files changed, 56581 insertions(+)
+ create mode 100644 .vs/PRSapp/v15/.suo
+ create mode 100644 .vs/PRSapp/v15/Server/sqlite3/db.lock
+ create mode 100644 .vs/PRSapp/v15/Server/sqlite3/storage.ide
+ create mode 100644 .vs/PRSapp/v15/Server/sqlite3/storage.ide-shm
+ create mode 100644 .vs/PRSapp/v15/Server/sqlite3/storage.ide-wal
+ create mode 100644 PRSapp.sln
+ create mode 100644 PRSapp/App.xaml
+ create mode 100644 PRSapp/App.xaml.cs
+ create mode 100644 PRSapp/AppLifeCycleClass.cs ...
+
+9. Go to www.github.com and create new repo, or if exists >
+   at top left of page where remote repo is, there is a rectangle icon > click it to get the remote url
+
+10. copy remote url to below to add the local repo to the remote one
+AdamSki@BlackHawk MINGW64 ~/source/repos/febon/april_master/PRSapp (master)
+$ git remote add origin https://github.com/AdamAtGit/PRSapp_Repeater.git
+
+11. Verify the fetch and push to master branch
+AdamSki@BlackHawk MINGW64 ~/source/repos/febon/april_master/PRSapp (master)
+$ git remote -v
+origin  https://github.com/AdamAtGit/PRSapp_Repeater.git (fetch)
+origin  https://github.com/AdamAtGit/PRSapp_Repeater.git (push)
+
+12. Push Origin Master (to remote)
+AdamSki@BlackHawk MINGW64 ~/source/repos/febon/april_master/PRSapp (master)
+$ git push origin master
+Enumerating objects: 310, done.
+Counting objects: 100% (310/310), done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (289/289), done.
+Writing objects: 100% (310/310), 7.94 MiB | 1.19 MiB/s, done.
+Total 310 (delta 146), reused 0 (delta 0)
+remote: Resolving deltas: 100% (146/146), done.
+To https://github.com/AdamAtGit/PRSapp_Repeater.git
+ * [new branch]      master -> master
+
+
+13. Now open solution in VS
+14. check to see if is in Team Explorer
+AdamSki@BlackHawk MINGW64 ~/source/repos/febon/april_master/PRSapp (master)

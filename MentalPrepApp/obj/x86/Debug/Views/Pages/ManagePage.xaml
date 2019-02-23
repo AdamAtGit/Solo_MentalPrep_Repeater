@@ -1,0 +1,51 @@
+﻿<Page
+    x:Class="MentalPrepApp.Views.Pages.ManagePage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:MentalPrepApp.Views.Pages"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid Grid.Row="0" Background="LightGray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Orientation="Horizontal">
+                <AppBarButton x:ConnectionId='2' Icon="Home" Label="Home"                            />
+                <AppBarButton x:ConnectionId='3' Icon="NewWindow" Label="PlayPage"                            />
+                <AppBarButton x:ConnectionId='4' Icon="Back" Label="Back"                      />
+                <AppBarButton x:ConnectionId='5' Icon="Forward" Label="Forward"                         />
+                <TextBlock Text="Manage Page" FontSize="22"
+                           VerticalAlignment="Center" Margin="160 0 0 0"/>
+            </StackPanel>
+
+            <AppBarButton Grid.Column="1" Icon="More">
+                <AppBarButton.Flyout>
+                    <MenuFlyout>
+                        <MenuFlyoutItem Icon="NewWindow" Text="New"/>
+                        <MenuFlyoutItem Icon="OpenFile"  Text="Open"/>
+                        <MenuFlyoutItem Icon="Save"      Text="Save"/>
+                        <MenuFlyoutItem Icon="Save"      Text="Save As"/>
+                        <MenuFlyoutItem Icon="ClosePane" Text="Close"/>
+                        <MenuFlyoutItem Icon="Setting"   Text="Settings"/>
+                    </MenuFlyout>
+                </AppBarButton.Flyout>
+            </AppBarButton>
+        </Grid>
+
+        <!-- Content-->
+        <!--<Ellipse Grid.Row="2" Height="100" Width="100" Fill="BurlyWood"/>-->
+    </Grid>
+</Page>
+

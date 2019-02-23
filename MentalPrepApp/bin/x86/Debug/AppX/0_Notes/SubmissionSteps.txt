@@ -1,0 +1,21 @@
+          ///////Submission Steps\\\\\\
+
+1. Communicate through email with Microsoft WIndows STore Testing team.
+         
+		 Queue of things to email them
+
+a. What do you mean by meta Data. If I choose windows universal and its just desktop, as phone version is not ready.
+Is that what you meant. Ultimately, how and where to I make meta data correct for package.
+emailed this question  2/20/19
+
+b. where are the reports of submission 'needs attention' ?
+emailed this question  2/20/19
+
+
+
+
+
+
+
+
+2.

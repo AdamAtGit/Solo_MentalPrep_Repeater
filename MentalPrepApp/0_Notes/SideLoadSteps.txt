@@ -1,0 +1,7 @@
+          ///////SideLoad Steps\\\\\\
+
+1. On Windows 10 > Settings > Settings > Update & Security > For Developers 
+   *Note- I also in settings > Apps & Features > Installing Apps > chose 'Warn me before installing apps from outside store'
+
+
+2.
