@@ -243,3 +243,11 @@ C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrep
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Core\MentalPrep.exe
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\MentalPrep.exe
 C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\MentalPrep.pdb
+C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\Views\SpeechPages\SRGSConstraintPage.g.i.cs
+C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\Views\SpeechPages\SRGSConstraintPage.g.cs
+C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\Styles\Styles.xaml
+C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\Views\SpeechPages\SRGSConstraintPage.xaml
+C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\Styles\Styles.xbf
+C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\obj\x86\Debug\Views\SpeechPages\SRGSConstraintPage.xbf
+C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Styles\Styles.xbf
+C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\SpeechPages\SRGSConstraintPage.xbf

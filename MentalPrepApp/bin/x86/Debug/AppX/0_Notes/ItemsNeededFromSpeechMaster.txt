@@ -1,0 +1,8 @@
+﻿
+1. Need that shared content folder on directory above.
+
+2. ListConstraint
+3. RecognitionListGrammar - maybe for like peter phrases
+4. SRGSConstraint -
+
+5. \SRGS\en-US\SRGSColors.xml

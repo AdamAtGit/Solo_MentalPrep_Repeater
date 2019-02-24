@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T22:14:31.782</Modified>
+      <Modified>2019-02-24T09:05:22.078</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MentalPrep.exe">
       <PackagePath>entrypoint\MentalPrep.exe</PackagePath>
-      <Modified>2019-02-23T22:14:26.147</Modified>
+      <Modified>2019-02-24T09:05:21.280</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -499,9 +499,17 @@
       <PackagePath>0_Notes\Git-Bash_InitializeLocal_Push2Remote.txt</PackagePath>
       <Modified>2019-02-23T04:30:25.140</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\0_Notes\ItemsNeededFromSpeechMaster.txt">
+      <PackagePath>0_Notes\ItemsNeededFromSpeechMaster.txt</PackagePath>
+      <Modified>2019-02-24T05:58:07.407</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\0_Notes\SideLoadSteps.txt">
       <PackagePath>0_Notes\SideLoadSteps.txt</PackagePath>
       <Modified>2019-02-20T23:59:52.017</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\0_Notes\Speech_Q_n_A.txt">
+      <PackagePath>0_Notes\Speech_Q_n_A.txt</PackagePath>
+      <Modified>2019-02-24T05:18:55.627</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\0_Notes\SubmissionSteps.txt">
       <PackagePath>0_Notes\SubmissionSteps.txt</PackagePath>
@@ -551,6 +559,14 @@
       <PackagePath>Assets\AV\PlayLibray\Videos\FullMetJack_30s.WMV</PackagePath>
       <Modified>2019-02-23T04:54:04.547</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\0Circle\Circle_MentalPrepApp_400x400.png">
+      <PackagePath>Assets\Images\0Circle\Circle_MentalPrepApp_400x400.png</PackagePath>
+      <Modified>2019-02-24T00:02:35.466</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\0Circle\PRSappTemplateImage_GrayWhSilvCircle.png">
+      <PackagePath>Assets\Images\0Circle\PRSappTemplateImage_GrayWhSilvCircle.png</PackagePath>
+      <Modified>2019-02-23T23:59:41.230</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\AdamPassProfile-01.png">
       <PackagePath>Assets\Images\AdamPassProfile-01.png</PackagePath>
       <Modified>2019-02-23T04:54:04.562</Modified>
@@ -570,6 +586,18 @@
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\Camera-Icon-Wh-Zoomed-01.png">
       <PackagePath>Assets\Images\Camera-Icon-Wh-Zoomed-01.png</PackagePath>
       <Modified>2019-02-23T04:54:05.153</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\imgOutSoundBullHorn.png">
+      <PackagePath>Assets\Images\imgOutSoundBullHorn.png</PackagePath>
+      <Modified>2019-02-24T00:32:54.739</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\Metro\MentalPrepMiniApp400x400.png">
+      <PackagePath>Assets\Images\Metro\MentalPrepMiniApp400x400.png</PackagePath>
+      <Modified>2019-02-23T05:24:29.632</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\Metro\Speaker-Volume.png">
+      <PackagePath>Assets\Images\Metro\Speaker-Volume.png</PackagePath>
+      <Modified>2019-02-24T00:15:43.586</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\Mic-Icon-Bl-01.png">
       <PackagePath>Assets\Images\Mic-Icon-Bl-01.png</PackagePath>
@@ -638,27 +666,27 @@
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\LargeTile.scale-100.png">
       <PackagePath>Assets\LargeTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:00.563</Modified>
+      <Modified>2019-02-24T00:06:15.515</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\LargeTile.scale-125.png">
       <PackagePath>Assets\LargeTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:00.611</Modified>
+      <Modified>2019-02-24T00:06:15.556</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\LargeTile.scale-150.png">
       <PackagePath>Assets\LargeTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:00.670</Modified>
+      <Modified>2019-02-24T00:06:15.607</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\LargeTile.scale-200.png">
       <PackagePath>Assets\LargeTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:00.762</Modified>
+      <Modified>2019-02-24T00:06:15.683</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\LargeTile.scale-400.png">
       <PackagePath>Assets\LargeTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.042</Modified>
+      <Modified>2019-02-24T00:06:15.920</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Misc\AdamPassProfile-01.png">
       <PackagePath>Assets\Misc\AdamPassProfile-01.png</PackagePath>
@@ -763,177 +791,177 @@
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SmallTile.scale-100.png">
       <PackagePath>Assets\SmallTile.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:24:59.817</Modified>
+      <Modified>2019-02-24T00:06:14.885</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SmallTile.scale-125.png">
       <PackagePath>Assets\SmallTile.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:24:59.844</Modified>
+      <Modified>2019-02-24T00:06:14.912</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SmallTile.scale-150.png">
       <PackagePath>Assets\SmallTile.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:24:59.870</Modified>
+      <Modified>2019-02-24T00:06:14.944</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SmallTile.scale-200.png">
       <PackagePath>Assets\SmallTile.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:24:59.898</Modified>
+      <Modified>2019-02-24T00:06:14.972</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SmallTile.scale-400.png">
       <PackagePath>Assets\SmallTile.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:24:59.941</Modified>
+      <Modified>2019-02-24T00:06:15.014</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SplashScreen.scale-100.png">
       <PackagePath>Assets\SplashScreen.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.521</Modified>
+      <Modified>2019-02-24T00:06:16.351</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SplashScreen.scale-125.png">
       <PackagePath>Assets\SplashScreen.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.589</Modified>
+      <Modified>2019-02-24T00:06:16.417</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SplashScreen.scale-150.png">
       <PackagePath>Assets\SplashScreen.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.673</Modified>
+      <Modified>2019-02-24T00:06:16.493</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SplashScreen.scale-400.png">
       <PackagePath>Assets\SplashScreen.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:02.298</Modified>
+      <Modified>2019-02-24T00:06:17.031</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square150x150Logo.scale-100.png">
       <PackagePath>Assets\Square150x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:00.055</Modified>
+      <Modified>2019-02-24T00:06:15.039</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square150x150Logo.scale-125.png">
       <PackagePath>Assets\Square150x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:00.086</Modified>
+      <Modified>2019-02-24T00:06:15.067</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square150x150Logo.scale-150.png">
       <PackagePath>Assets\Square150x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:00.116</Modified>
+      <Modified>2019-02-24T00:06:15.099</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square150x150Logo.scale-400.png">
       <PackagePath>Assets\Square150x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:00.232</Modified>
+      <Modified>2019-02-24T00:06:15.226</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.altform-unplated_targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.362</Modified>
+      <Modified>2019-02-24T00:06:16.192</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.altform-unplated_targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.458</Modified>
+      <Modified>2019-02-24T00:06:16.300</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.altform-unplated_targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.401</Modified>
+      <Modified>2019-02-24T00:06:16.235</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.altform-unplated_targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.altform-unplated_targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.420</Modified>
+      <Modified>2019-02-24T00:06:16.263</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.scale-100.png">
       <PackagePath>Assets\Square44x44Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.097</Modified>
+      <Modified>2019-02-24T00:06:15.944</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.scale-125.png">
       <PackagePath>Assets\Square44x44Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.122</Modified>
+      <Modified>2019-02-24T00:06:15.969</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.scale-150.png">
       <PackagePath>Assets\Square44x44Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.145</Modified>
+      <Modified>2019-02-24T00:06:15.994</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.scale-400.png">
       <PackagePath>Assets\Square44x44Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.198</Modified>
+      <Modified>2019-02-24T00:06:16.045</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.targetsize-16.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-16.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.219</Modified>
+      <Modified>2019-02-24T00:06:16.065</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.targetsize-24.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.240</Modified>
+      <Modified>2019-02-24T00:06:16.084</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.targetsize-256.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-256.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.342</Modified>
+      <Modified>2019-02-24T00:06:16.157</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.targetsize-32.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-32.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.283</Modified>
+      <Modified>2019-02-24T00:06:16.103</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.targetsize-48.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-48.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.306</Modified>
+      <Modified>2019-02-24T00:06:16.121</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\StoreLogo.scale-100.png">
       <PackagePath>Assets\StoreLogo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:02.319</Modified>
+      <Modified>2019-02-24T00:06:17.051</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\StoreLogo.scale-125.png">
       <PackagePath>Assets\StoreLogo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:02.363</Modified>
+      <Modified>2019-02-24T00:06:17.070</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\StoreLogo.scale-150.png">
       <PackagePath>Assets\StoreLogo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:02.396</Modified>
+      <Modified>2019-02-24T00:06:17.091</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\StoreLogo.scale-200.png">
       <PackagePath>Assets\StoreLogo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:02.422</Modified>
+      <Modified>2019-02-24T00:06:17.112</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\StoreLogo.scale-400.png">
       <PackagePath>Assets\StoreLogo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:02.454</Modified>
+      <Modified>2019-02-24T00:06:17.140</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Wide310x150Logo.scale-100.png">
       <PackagePath>Assets\Wide310x150Logo.scale-100.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:00.260</Modified>
+      <Modified>2019-02-24T00:06:15.252</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Wide310x150Logo.scale-125.png">
       <PackagePath>Assets\Wide310x150Logo.scale-125.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:00.301</Modified>
+      <Modified>2019-02-24T00:06:15.281</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Wide310x150Logo.scale-150.png">
       <PackagePath>Assets\Wide310x150Logo.scale-150.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:00.338</Modified>
+      <Modified>2019-02-24T00:06:15.315</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Wide310x150Logo.scale-400.png">
       <PackagePath>Assets\Wide310x150Logo.scale-400.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:00.526</Modified>
+      <Modified>2019-02-24T00:06:15.481</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\LockScreenLogo.scale-200.png">
       <PackagePath>Assets\LockScreenLogo.scale-200.png</PackagePath>
@@ -942,63 +970,75 @@
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\SplashScreen.scale-200.png">
       <PackagePath>Assets\SplashScreen.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.840</Modified>
+      <Modified>2019-02-24T00:06:16.612</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square150x150Logo.scale-200.png">
       <PackagePath>Assets\Square150x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:00.153</Modified>
+      <Modified>2019-02-24T00:06:15.145</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.scale-200.png">
       <PackagePath>Assets\Square44x44Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.168</Modified>
+      <Modified>2019-02-24T00:06:16.017</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Square44x44Logo.targetsize-24_altform-unplated.png">
       <PackagePath>Assets\Square44x44Logo.targetsize-24_altform-unplated.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:01.381</Modified>
+      <Modified>2019-02-24T00:06:16.211</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Wide310x150Logo.scale-200.png">
       <PackagePath>Assets\Wide310x150Logo.scale-200.png</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:25:00.388</Modified>
+      <Modified>2019-02-24T00:06:15.360</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
       <Modified>2019-02-20T22:24:17.464</Modified>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\SRGS\en-US\SRGSColors.xml">
+      <PackagePath>SRGS\en-US\SRGSColors.xml</PackagePath>
+      <Modified>2018-10-20T01:35:55.387</Modified>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MentalPrep.xr.xml">
       <PackagePath>MentalPrep.xr.xml</PackagePath>
-      <Modified>2019-02-23T06:50:31.598</Modified>
+      <Modified>2019-02-24T09:05:20.688</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-02-23T22:14:23.938</Modified>
+      <Modified>2019-02-24T09:05:20.837</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-02-23T22:14:23.939</Modified>
+      <Modified>2019-02-24T09:05:20.837</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Styles\Styles.xbf">
+      <PackagePath>Styles\Styles.xbf</PackagePath>
+      <Modified>2019-02-24T09:05:20.782</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\Pages\ManagePage.xbf">
       <PackagePath>Views\Pages\ManagePage.xbf</PackagePath>
-      <Modified>2019-02-23T22:14:23.940</Modified>
+      <Modified>2019-02-24T09:05:20.838</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\Pages\PlayPage.xbf">
       <PackagePath>Views\Pages\PlayPage.xbf</PackagePath>
-      <Modified>2019-02-23T22:14:23.940</Modified>
+      <Modified>2019-02-24T09:05:20.839</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\SpeechPages\SRGSConstraintPage.xbf">
+      <PackagePath>Views\SpeechPages\SRGSConstraintPage.xbf</PackagePath>
+      <Modified>2019-02-24T09:05:20.841</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\UserControls\AppFxs\Nested\CreateTTSLargeUserControl.xbf">
       <PackagePath>Views\UserControls\AppFxs\Nested\CreateTTSLargeUserControl.xbf</PackagePath>
-      <Modified>2019-02-23T22:14:23.898</Modified>
+      <Modified>2019-02-24T09:05:20.804</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\UserControls\AppFxs\Nested\DictationUserControl.xbf">
       <PackagePath>Views\UserControls\AppFxs\Nested\DictationUserControl.xbf</PackagePath>
-      <Modified>2019-02-23T22:14:23.943</Modified>
+      <Modified>2019-02-24T09:05:20.843</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\UserControls\AppFxs\RepeaterUserControl.xbf">
       <PackagePath>Views\UserControls\AppFxs\RepeaterUserControl.xbf</PackagePath>
-      <Modified>2019-02-23T22:14:23.938</Modified>
+      <Modified>2019-02-24T09:05:20.836</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1007,11 +1047,11 @@
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-23T05:32:49.996</Modified>
+      <Modified>2019-02-24T08:11:54.856</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Core\MentalPrep.exe">
       <PackagePath>MentalPrep.exe</PackagePath>
-      <Modified>2019-02-23T22:14:31.718</Modified>
+      <Modified>2019-02-24T09:05:22.059</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>

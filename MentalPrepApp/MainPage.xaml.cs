@@ -12,6 +12,8 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
+using Windows.UI.Xaml.Automation.Peers;
+
 
 // The Blank Page item template is documented at https://go.microsoft.com/fwlink/?LinkId=402352&clcid=0x409
 
@@ -41,6 +43,13 @@ namespace MentalPrepApp
             Frame.Navigate(typeof(Views.Pages.ManagePage));
         }
 
+
+        private void NavToSRGSConstraint_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Views.SpeechPages.SRGSConstraintPage));
+        }
+
+
         private void NavBack_Click(object sender, RoutedEventArgs e)
         {
             if (Frame.CanGoBack)
@@ -52,5 +61,37 @@ namespace MentalPrepApp
             if (Frame.CanGoForward)
                 Frame.GoForward();
         }
+
+
+
+        //    //code set  - from SpeechMaster
+        //    /// <summary>
+        //    /// Display a message to the user.
+        //    /// This method may be called from any thread.
+        //    /// </summary>
+        //    /// <param name="strMessage"></param>
+        //    /// <param name="type"></param>
+        //    public void NotifyUser(string strMessage, NotifyType type)
+        //    {
+        //        // If called from the UI thread, then update immediately.
+        //        // Otherwise, schedule a task on the UI thread to perform the update.
+        //        if (Dispatcher.HasThreadAccess)
+        //        {
+        //            UpdateStatus(strMessage, type);
+        //        }
+        //        else
+        //        {
+        //            var task = Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () => UpdateStatus(strMessage, type));
+        //        }
+        //    }
+
+        //}
+
+        //public enum NotifyType
+        //{
+        //    StatusMessage,
+        //    ErrorMessage
+        //};
+
     }
 }

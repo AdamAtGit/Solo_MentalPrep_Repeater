@@ -373,8 +373,14 @@
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\0_Notes\Git-Bash_InitializeLocal_Push2Remote.txt">
       <PackagePath>0_Notes\Git-Bash_InitializeLocal_Push2Remote.txt</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\0_Notes\ItemsNeededFromSpeechMaster.txt">
+      <PackagePath>0_Notes\ItemsNeededFromSpeechMaster.txt</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\0_Notes\SideLoadSteps.txt">
       <PackagePath>0_Notes\SideLoadSteps.txt</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\0_Notes\Speech_Q_n_A.txt">
+      <PackagePath>0_Notes\Speech_Q_n_A.txt</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\0_Notes\SubmissionSteps.txt">
       <PackagePath>0_Notes\SubmissionSteps.txt</PackagePath>
@@ -412,6 +418,12 @@
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\AV\PlayLibray\Videos\FullMetJack_30s.WMV">
       <PackagePath>Assets\AV\PlayLibray\Videos\FullMetJack_30s.WMV</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\0Circle\Circle_MentalPrepApp_400x400.png">
+      <PackagePath>Assets\Images\0Circle\Circle_MentalPrepApp_400x400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\0Circle\PRSappTemplateImage_GrayWhSilvCircle.png">
+      <PackagePath>Assets\Images\0Circle\PRSappTemplateImage_GrayWhSilvCircle.png</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\AdamPassProfile-01.png">
       <PackagePath>Assets\Images\AdamPassProfile-01.png</PackagePath>
     </AppxPackagedFile>
@@ -426,6 +438,15 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\Camera-Icon-Wh-Zoomed-01.png">
       <PackagePath>Assets\Images\Camera-Icon-Wh-Zoomed-01.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\imgOutSoundBullHorn.png">
+      <PackagePath>Assets\Images\imgOutSoundBullHorn.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\Metro\MentalPrepMiniApp400x400.png">
+      <PackagePath>Assets\Images\Metro\MentalPrepMiniApp400x400.png</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\Metro\Speaker-Volume.png">
+      <PackagePath>Assets\Images\Metro\Speaker-Volume.png</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Assets\Images\Mic-Icon-Bl-01.png">
       <PackagePath>Assets\Images\Mic-Icon-Bl-01.png</PackagePath>
@@ -736,6 +757,9 @@
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\Properties\Default.rd.xml">
       <PackagePath>Properties\Default.rd.xml</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\SRGS\en-US\SRGSColors.xml">
+      <PackagePath>SRGS\en-US\SRGSColors.xml</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MentalPrep.xr.xml">
       <PackagePath>MentalPrep.xr.xml</PackagePath>
     </AppxPackagedFile>
@@ -745,11 +769,17 @@
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Styles\Styles.xbf">
+      <PackagePath>Styles\Styles.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\Pages\ManagePage.xbf">
       <PackagePath>Views\Pages\ManagePage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\Pages\PlayPage.xbf">
       <PackagePath>Views\Pages\PlayPage.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\SpeechPages\SRGSConstraintPage.xbf">
+      <PackagePath>Views\SpeechPages\SRGSConstraintPage.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\UserControls\AppFxs\Nested\CreateTTSLargeUserControl.xbf">
       <PackagePath>Views\UserControls\AppFxs\Nested\CreateTTSLargeUserControl.xbf</PackagePath>

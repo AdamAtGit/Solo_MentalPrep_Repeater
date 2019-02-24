@@ -189,7 +189,7 @@ namespace MentalPrepApp.MentalPrepApp_XamlTypeInfo
 
         private void InitTypeTables()
         {
-            _typeNameTable = new string[10];
+            _typeNameTable = new string[11];
             _typeNameTable[0] = "MentalPrepApp.MainPage";
             _typeNameTable[1] = "Windows.UI.Xaml.Controls.Page";
             _typeNameTable[2] = "Windows.UI.Xaml.Controls.UserControl";
@@ -198,10 +198,11 @@ namespace MentalPrepApp.MentalPrepApp_XamlTypeInfo
             _typeNameTable[5] = "String";
             _typeNameTable[6] = "Int32";
             _typeNameTable[7] = "MentalPrepApp.Views.Pages.PlayPage";
-            _typeNameTable[8] = "MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl";
-            _typeNameTable[9] = "MentalPrepApp.Views.UserControls.AppFxs.Nested.DictationUserControl";
+            _typeNameTable[8] = "MentalPrepApp.Views.SpeechPages.SRGSConstraintPage";
+            _typeNameTable[9] = "MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl";
+            _typeNameTable[10] = "MentalPrepApp.Views.UserControls.AppFxs.Nested.DictationUserControl";
 
-            _typeTable = new global::System.Type[10];
+            _typeTable = new global::System.Type[11];
             _typeTable[0] = typeof(global::MentalPrepApp.MainPage);
             _typeTable[1] = typeof(global::Windows.UI.Xaml.Controls.Page);
             _typeTable[2] = typeof(global::Windows.UI.Xaml.Controls.UserControl);
@@ -210,8 +211,9 @@ namespace MentalPrepApp.MentalPrepApp_XamlTypeInfo
             _typeTable[5] = typeof(global::System.String);
             _typeTable[6] = typeof(global::System.Int32);
             _typeTable[7] = typeof(global::MentalPrepApp.Views.Pages.PlayPage);
-            _typeTable[8] = typeof(global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl);
-            _typeTable[9] = typeof(global::MentalPrepApp.Views.UserControls.AppFxs.Nested.DictationUserControl);
+            _typeTable[8] = typeof(global::MentalPrepApp.Views.SpeechPages.SRGSConstraintPage);
+            _typeTable[9] = typeof(global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl);
+            _typeTable[10] = typeof(global::MentalPrepApp.Views.UserControls.AppFxs.Nested.DictationUserControl);
         }
 
         private int LookupTypeIndexByName(string typeName)
@@ -250,8 +252,9 @@ namespace MentalPrepApp.MentalPrepApp_XamlTypeInfo
         private object Activate_3_ManagePage() { return new global::MentalPrepApp.Views.Pages.ManagePage(); }
         private object Activate_4_RepeaterUserControl() { return new global::MentalPrepApp.Views.UserControls.AppFxs.RepeaterUserControl(); }
         private object Activate_7_PlayPage() { return new global::MentalPrepApp.Views.Pages.PlayPage(); }
-        private object Activate_8_CreateTTSLargeUserControl() { return new global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl(); }
-        private object Activate_9_DictationUserControl() { return new global::MentalPrepApp.Views.UserControls.AppFxs.Nested.DictationUserControl(); }
+        private object Activate_8_SRGSConstraintPage() { return new global::MentalPrepApp.Views.SpeechPages.SRGSConstraintPage(); }
+        private object Activate_9_CreateTTSLargeUserControl() { return new global::MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl(); }
+        private object Activate_10_DictationUserControl() { return new global::MentalPrepApp.Views.UserControls.AppFxs.Nested.DictationUserControl(); }
 
         private global::Windows.UI.Xaml.Markup.IXamlType CreateXamlType(int typeIndex)
         {
@@ -313,9 +316,16 @@ namespace MentalPrepApp.MentalPrepApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 8:   //  MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl
+            case 8:   //  MentalPrepApp.Views.SpeechPages.SRGSConstraintPage
+                userType = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.Page"));
+                userType.Activator = Activate_8_SRGSConstraintPage;
+                userType.SetIsLocalType();
+                xamlType = userType;
+                break;
+
+            case 9:   //  MentalPrepApp.Views.UserControls.AppFxs.Nested.CreateTTSLargeUserControl
                 userType = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_8_CreateTTSLargeUserControl;
+                userType.Activator = Activate_9_CreateTTSLargeUserControl;
                 userType.AddMemberName("CurrentUserName");
                 userType.AddMemberName("CurrentUserId");
                 userType.AddMemberName("SelectedTitleId");
@@ -326,9 +336,9 @@ namespace MentalPrepApp.MentalPrepApp_XamlTypeInfo
                 xamlType = userType;
                 break;
 
-            case 9:   //  MentalPrepApp.Views.UserControls.AppFxs.Nested.DictationUserControl
+            case 10:   //  MentalPrepApp.Views.UserControls.AppFxs.Nested.DictationUserControl
                 userType = new global::MentalPrepApp.MentalPrepApp_XamlTypeInfo.XamlUserType(this, typeName, type, GetXamlTypeByName("Windows.UI.Xaml.Controls.UserControl"));
-                userType.Activator = Activate_9_DictationUserControl;
+                userType.Activator = Activate_10_DictationUserControl;
                 userType.SetIsLocalType();
                 xamlType = userType;
                 break;

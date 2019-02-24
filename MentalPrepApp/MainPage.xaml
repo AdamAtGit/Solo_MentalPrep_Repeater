@@ -25,6 +25,7 @@
                 <AppBarButton Icon="Home" Label="Home"/>
                 <AppBarButton Icon="NewWindow" Label="Play Page" Click="NavToPlayPage_Click"/>
                 <AppBarButton Icon="Manage" Label="Manage" Click="NavToManage_Click"/>
+                <AppBarButton Icon="Send"  Label="SRGS Constraints" Click="NavToSRGSConstraint_Click"/>
                 <AppBarButton Icon="Back" Label="Back" Click="NavBack_Click"/>
                 <AppBarButton Icon="Forward" Label="Forward" Click="NavForward_Click"/>
                 <TextBlock Text="Home Page" FontSize="22"

@@ -1,0 +1,24 @@
+﻿Learning _T -Speech Questiods and Answers:
+
+Q> Difference between Predifiend-Dicionary-Grammar
+and SRGS-Contraints?
+
+A> 
+
+
+
+
+Q> Difference between Continuous-Recognition-List-Grammar 
+and Continuous-Recognition-SRGS-Grammar?
+
+A>
+
+
+
+Q> Difference between Predefined-WebSearch-Grammar 
+and List-Contraint?
+
+A>
+
+
+

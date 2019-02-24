@@ -111,6 +111,9 @@
     <Compile Include="Views\Pages\PlayPage.xaml.cs">
       <DependentUpon>PlayPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SpeechPages\SRGSConstraintPage.xaml.cs">
+      <DependentUpon>SRGSConstraintPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\UserControls\AppFxs\Nested\CreateTTSLargeUserControl.xaml.cs">
       <DependentUpon>CreateTTSLargeUserControl.xaml</DependentUpon>
     </Compile>
@@ -125,11 +128,17 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="Assets\Images\Metro\Speaker-Volume.metrop" />
     <None Include="MentalPrepApp_TemporaryKey.pfx" />
+    <PRIResource Include="Strings\en-US\LocalizationSpeechResources.resw" />
+    <PRIResource Include="Strings\en-US\LocalizationTTSResources.resjson" />
+    <PRIResource Include="Strings\en-US\LocalizationTTSResources.resw" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="0_Notes\Git-Bash_InitializeLocal_Push2Remote.txt" />
+    <Content Include="0_Notes\ItemsNeededFromSpeechMaster.txt" />
     <Content Include="0_Notes\SideLoadSteps.txt" />
+    <Content Include="0_Notes\Speech_Q_n_A.txt" />
     <Content Include="Assets\AV\PlayLibray\Audio\BackInHighLife.mp3" />
     <Content Include="Assets\AV\PlayLibray\Audio\FightSong.mp3" />
     <Content Include="Assets\AV\PlayLibray\Audio\HoneyImGood.mp3" />
@@ -141,11 +150,16 @@
     <Content Include="Assets\AV\PlayLibray\Audio\Thunderstruck.mp3" />
     <Content Include="Assets\AV\PlayLibray\Audio\TookAPillinIbiza.mp3" />
     <Content Include="Assets\AV\PlayLibray\Videos\FullMetJack_30s.WMV" />
+    <Content Include="Assets\Images\0Circle\Circle_MentalPrepApp_400x400.png" />
+    <Content Include="Assets\Images\0Circle\PRSappTemplateImage_GrayWhSilvCircle.png" />
     <Content Include="Assets\Images\AdamPassProfile-01.png" />
     <Content Include="Assets\Images\All-Three-01.png" />
     <Content Include="Assets\Images\Camera-Icon-Black-01.png" />
     <Content Include="Assets\Images\Camera-Icon-Wh-01.png" />
     <Content Include="Assets\Images\Camera-Icon-Wh-Zoomed-01.png" />
+    <Content Include="Assets\Images\imgOutSoundBullHorn.png" />
+    <Content Include="Assets\Images\Metro\MentalPrepMiniApp400x400.png" />
+    <Content Include="Assets\Images\Metro\Speaker-Volume.png" />
     <Content Include="Assets\Images\Mic-Icon-Bl-01.png" />
     <Content Include="Assets\Images\Mic-Icon-Bl-03.png" />
     <Content Include="Assets\Images\Mic-Icon-Colorful-01.png" />
@@ -235,6 +249,7 @@
     <Content Include="Assets\Square44x44Logo.targetsize-24_altform-unplated.png" />
     <Content Include="Assets\Wide310x150Logo.scale-200.png" />
     <Content Include="0_Notes\SubmissionSteps.txt" />
+    <Content Include="SRGS\en-US\SRGSColors.xml" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -245,11 +260,19 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="Styles\Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Pages\ManagePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\Pages\PlayPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SpeechPages\SRGSConstraintPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -275,6 +298,31 @@
     <Folder Include="Assets\AV\PlayLibray\PlayLists\Mood\" />
     <Folder Include="Assets\AV\PlayLibray\PlayLists\Out\" />
     <Folder Include="Assets\AV\PlayLibray\PlayLists\WorkOut\" />
+    <Folder Include="SRGS\de-DE\" />
+    <Folder Include="SRGS\en-AU\" />
+    <Folder Include="SRGS\en-CA\" />
+    <Folder Include="SRGS\en-GB\" />
+    <Folder Include="SRGS\en-IN\" />
+    <Folder Include="SRGS\es-ES\" />
+    <Folder Include="SRGS\fr-FR\" />
+    <Folder Include="SRGS\it-IT\" />
+    <Folder Include="SRGS\zh-Hans-CN\" />
+    <Folder Include="Strings\de-DE\" />
+    <Folder Include="Strings\en-AU\" />
+    <Folder Include="Strings\en-CA\" />
+    <Folder Include="Strings\en-GB\" />
+    <Folder Include="Strings\en-IN\" />
+    <Folder Include="Strings\es-ES\" />
+    <Folder Include="Strings\es-MX\" />
+    <Folder Include="Strings\fr-FR\" />
+    <Folder Include="Strings\it-IT\" />
+    <Folder Include="Strings\ja-JP\" />
+    <Folder Include="Strings\ko-KR\" />
+    <Folder Include="Strings\pl-PL\" />
+    <Folder Include="Strings\pt-BR\" />
+    <Folder Include="Strings\ru-RU\" />
+    <Folder Include="Strings\zh-CN\" />
+    <Folder Include="Strings\zh-TW\" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '14.0' ">
     <VisualStudioVersion>14.0</VisualStudioVersion>

@@ -13,7 +13,7 @@ using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Media;
 using Windows.Media.SpeechRecognition;
 
-using System.Data.SqlClient;
+//using System.Data.SqlClient;
 
 namespace MentalPrepApp.Views.UserControls.AppFxs
 {
@@ -263,6 +263,7 @@ namespace MentalPrepApp.Views.UserControls.AppFxs
             await speechRecognizer.CompileConstraintsAsync();
 
             //Inform user it's now listening
+            tbRecogStatus.Foreground = new SolidColorBrush(Colors.DarkOrange);
             tbRecogStatus.Text = "...listening";
             SolidColorBrush darkGray = new SolidColorBrush(Colors.DarkGray);
             btnRecognitionTtsRawBigAsync.BorderBrush = new SolidColorBrush(Colors.DarkOrange);
@@ -278,6 +279,7 @@ namespace MentalPrepApp.Views.UserControls.AppFxs
             boxTtsRawBig.Text += SpeechInputResult;
 
             //Inform user it has finished listening and to click the Mic to continue
+            tbRecogStatus.Foreground = new SolidColorBrush(Colors.Ivory);
             tbRecogStatus.Text = "listening stopped. Tap the Mic to continue";
             btnRecognitionTtsRawBigAsync.BorderBrush = darkGray;
 
@@ -358,7 +360,33 @@ namespace MentalPrepApp.Views.UserControls.AppFxs
             BtnRepeatMediaOutAsync.Foreground = new SolidColorBrush(Windows.UI.Colors.Black);           
         }
 
+        private async void BtnSpeechRecogWeatherSearchAsync_Click(object sender, RoutedEventArgs e)
+        {
+            // Create an instance of SpeechRecognizer.
+            var speechRecognizer = new Windows.Media.SpeechRecognition.SpeechRecognizer();
 
+            // Listen for audio input issues.
+          ///////  speechRecognizer.RecognitionQualityDegrading += speechRecognizer_RecognitionQualityDegrading;
+
+            // Add a web search grammar to the recognizer.
+            var webSearchGrammar = new Windows.Media.SpeechRecognition.SpeechRecognitionTopicConstraint(Windows.Media.SpeechRecognition.SpeechRecognitionScenario.WebSearch, "webSearch");
+
+
+            speechRecognizer.UIOptions.AudiblePrompt = "Say what you want to search for...";
+            speechRecognizer.UIOptions.ExampleText = @"Ex. 'weather for London'";
+            speechRecognizer.Constraints.Add(webSearchGrammar);
+
+            // Compile the constraint.
+            await speechRecognizer.CompileConstraintsAsync();
+
+            // Start recognition.
+            Windows.Media.SpeechRecognition.SpeechRecognitionResult speechRecognitionResult = await speechRecognizer.RecognizeWithUIAsync();
+            //await speechRecognizer.RecognizeWithUIAsync();
+
+            // Do something with the recognition result.
+            var messageDialog = new Windows.UI.Popups.MessageDialog(speechRecognitionResult.Text, "Text spoken");
+            await messageDialog.ShowAsync();
+        }
     }
 
     /////Ends MainPage partial Class and starts a static 'Top Level'(non-nested) class in same NameSpace

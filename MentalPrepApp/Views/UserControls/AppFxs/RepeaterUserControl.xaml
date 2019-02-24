@@ -44,14 +44,15 @@
                         Height="Auto" Width="Auto"
                         BorderBrush="DarkGray">
                 <Image x:Name="imgMicrophoneTapped"                      
-                           Source="/Assets/Misc/Mic-Icon-Bl-03.png"               
-                            Height="50" Width="50" Margin="0 0 0 0"/>
+                       Source="/Assets/Misc/Mic-Icon-Bl-03.png"               
+                       Height="60" Width="60" Margin="0 0 0 0"/>
             </Button>
             <TextBlock x:Name="tbRecogStatus" FontSize="12.5"
-                           Text="Tap Mic to start Dictating"
+                           Text="Tap Mic to start Dictating" Foreground="Ivory"
                            Margin="0,5,0,0"
                            HorizontalAlignment="Center"/>
             <TextBox x:Name="boxTtsRawBig" Height="230" Width="350" 
+                     PlaceholderText="Dictate and/or Type, Paste the Text to be Spoken!"
                      TextWrapping="Wrap"
                      AcceptsReturn="True"
                      IsReadOnly="False"
@@ -60,30 +61,15 @@
                      HorizontalAlignment="Center" VerticalAlignment="Top"
                      Margin="0 5"/>
         </StackPanel>
-        <!--<StackPanel Background="Gray" Grid.Row="1">-->
-            <!--<TextBox x:Name="boxTtsRawBig"
-                     IsSpellCheckEnabled="True" AcceptsReturn="True"
-                     Background="WhiteSmoke"
-                     Height="260" Margin="5 5 5 5"/>-->
-
-         
-        <!--</StackPanel>-->
-       
-      
-          
-
+     
         <!--3rd row-->
         <StackPanel Grid.Row="2" Orientation="Horizontal">
             <AppBarButton  x:Name="BtnRepeatMediaOutAsync" Label="Play" Icon="play"                    
                            Click="BtnRepeatMediaOutAsync_Click"
                            Margin="0 0 0 10" Height="54"/>
-            <!--Command="{Binding RepeatMediaOutAsyncCommand}"-->
-
             <AppBarButton  x:Name="BtnStopPauseRepeatMediaOutAsync" Label="Stop" Icon="Stop"
                           Click="BtnStopPauseRepeatMediaOutAsync_Click"
                           Visibility="Collapsed" Margin="0 0 0 10" Height="54"/>
-          
-
             <ToggleSwitch x:Name="TgsRepeats" Header="         Repeat" IsOn="True" Margin="5 10 0 0" FontSize="12" HorizontalAlignment="Left" VerticalAlignment="Top" Width="89"/>
             <TextBox x:Name="boxRepetitions" Text="3"  Header="    Times" FontSize="12" Margin="-50,0,66,0" Height="50" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
             <TextBox x:Name="boxInterval" Text="3" Header="   Intervals (Mins)" FontSize="12" Height="50" Margin="-55,0,-43,0" />
@@ -101,12 +87,16 @@
 
         <!--5th row-->
         <StackPanel x:Name="stpSpeechSettings" Grid.Row="4" Orientation="Horizontal" 
-                  Visibility="Collapsed"  Height="Auto">
+                   Height="Auto">
+
+          
             <TextBlock Text="Voice Gender" FontSize="12" 
-                       VerticalAlignment="Center" Margin="20 6 0 0" />
+                       VerticalAlignment="Center" Margin="20 6 0 0" 
+                       Visibility="Collapsed"/>
             <ComboBox x:Name="cboVoiceGender" FontSize="12" 
-                     SelectionChanged="cboVoiceGender_SelectionChanged"
-                      Height="27" Width="130" Margin="7 5 5 0">
+                      SelectionChanged="cboVoiceGender_SelectionChanged"
+                      Height="27" Width="130" Margin="7 5 5 0"
+                      Visibility="Collapsed">
                 <ComboBoxItem Background="DodgerBlue" Foreground="WhiteSmoke">
                     <x:String>male</x:String>
                 </ComboBoxItem>
@@ -118,14 +108,36 @@
 
         <!--6th row Slider timer interval-->
         <StackPanel Grid.Row="5" Margin="0 10" Height="Auto"
-                    Visibility="Collapsed">
+                    >
             <Slider x:Name="SdrSpeakAsyncProgress" 
                     Value="0"  Pivot.SlideInAnimationGroup="GroupOne"
                     TickFrequency="5"
-                    Margin="5 0 5 5"/>
+                    Margin="5 0 5 5"
+                    Visibility="Collapsed"/>
             <AppBarButton x:Name="BtnStopAsync" Label="Stop" Icon="Stop"
                           Click="BtnStopPauseRepeatMediaOutAsync_Click"
                           Visibility="Collapsed" Margin="0 0 0 10" Height="54"/>
+            <StackPanel x:Name="stpMediaOut" Orientation="Horizontal" HorizontalAlignment="Center">
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto"/>
+                        <ColumnDefinition Width="Auto"/>
+                    </Grid.ColumnDefinitions>
+                
+                <AppBarButton x:Name="BtnSpeechRecogWeatherSearch" Grid.Column="0" 
+                              Label="Weather" Icon="World"
+                              Margin="0 0 200 0" Click="BtnSpeechRecogWeatherSearchAsync_Click"/>
+
+                    <SymbolIcon Symbol="Microphone" Margin="0 0 0 0"/>
+                    <SymbolIcon Symbol="Audio"  Margin="100 0 0 0"/>
+                    <SymbolIcon Symbol="Admin"  Margin="190 0 0 0"/>
+
+                    <Image x:Name="imgSpeakerOut" Grid.Column="1"             
+                    Source="/Assets/Images/imgOutSoundBullHorn.png"
+                    Height="50" Width="60" Margin="0 0 0 0"/>
+                <!--Source="/Assets/Images/Metro/Speaker-Volume.png"-->
+                </Grid>
+            </StackPanel>
         </StackPanel>
     </Grid>
 </UserControl>
