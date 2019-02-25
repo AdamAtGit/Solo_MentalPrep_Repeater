@@ -1,5 +1,5 @@
 ﻿<Page
-    x:Class="MentalPrepApp.Views.SpeechPages.SRGSConstraintPage"
+    x:Class="MentalPrepApp.Views.SpeechPages.SRGSConstrSEDIBPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:MentalPrepApp.Views.SpeechPages"
@@ -10,7 +10,7 @@
 
 
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}" Height="640" Width="360">
-        <Grid x:ConnectionId='2' x:Name="RootGrid" Margin="12,20,12,12">
+        <Grid Background="#242424" x:Name="RootGrid" Margin="12,20,12,12">
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
                 <RowDefinition Height="Auto"/>
@@ -20,20 +20,21 @@
             </Grid.RowDefinitions>
 
             <StackPanel Grid.Column="0" Orientation="Horizontal">
-                <AppBarButton x:ConnectionId='11' Icon="Home" Label="Home"                            />
-                <AppBarButton x:ConnectionId='12' Icon="NewWindow" Label="Play Page"                            />
-                <AppBarButton x:ConnectionId='13' Icon="Manage" Label="Manage"                              />
-                <AppBarButton x:ConnectionId='14' Icon="Back" Label="Back"                      />
-                <AppBarButton x:ConnectionId='15' Icon="Forward" Label="Forward"                         />
+                <AppBarButton Icon="Home" Label="Home" Click="NavBacktoMain_Click"/>
+                <AppBarButton Icon="NewWindow" Label="Play Page" Click="NavToPlayPage_Click"/>
+                <AppBarButton Icon="Manage" Label="Manage" Click="NavToManagePage_Click"/>
+                <AppBarButton Icon="Back" Label="Back" Click="NavBack_Click"/>
+                <AppBarButton Icon="Forward" Label="Forward" Click="NavForward_Click"/>
                 <TextBlock Text="Manage Page" FontSize="22"
                            VerticalAlignment="Center" Margin="160 0 0 0"/>
             </StackPanel>
 
-            <StackPanel Grid.Row="2" Margin="0,10,0,10">
-                <TextBlock Text="Description:" FontSize="20" 
+            <StackPanel Grid.Row="2" Margin="20,10,0,10">
+                <TextBlock Text="Rehearse:" FontSize="22" Foreground="DarkOrange"
                            Style="{StaticResource SampleHeaderTextStyle}"/>
-                <TextBlock Style="{StaticResource ScenarioDescriptionTextStyle}" TextWrapping="Wrap">
-                    This sample showcases one-shot speech recognition using a custom SRGS/GRXML grammar.
+                <TextBlock Style="{StaticResource ScenarioDescriptionTextStyle}"
+                            FontSize="18" Foreground="DarkOrange" TextWrapping="Wrap">
+                   SED IM 0-5
                 </TextBlock>
             </StackPanel>
 
@@ -41,33 +42,33 @@
                 <StackPanel>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
                         <TextBlock Text="Language: " Margin="10,0,0,0" VerticalAlignment="Center"/>
-                        <ComboBox x:ConnectionId='10' x:Name="cbLanguageSelection" 
-                                                                                          
+                        <ComboBox x:Name="cbLanguageSelection" 
+                                  SelectionChanged="cbLanguageSelection_SelectionChanged" 
                                   Margin="10" Width="200"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
-                        <Button x:ConnectionId='7' x:Name="btnRecognizeWithUI"                               
+                        <Button x:Name="btnRecognizeWithUI" Click="RecognizeWithUI_Click" 
                                 IsEnabled="False" Margin="10,10,0,10">
                             <StackPanel Orientation="Horizontal">
                                 <SymbolIcon Symbol="Microphone"/>
                                 <TextBlock Text=" with UI"/>
                             </StackPanel>
                         </Button>
-                        <Button x:ConnectionId='8' x:Name="btnRecognizeWithoutUI"                                 
+                        <Button x:Name="btnRecognizeWithoutUI" Click="RecognizeWithoutUI_Click"
                                 IsEnabled="False" Margin="10,10,0,10">
                             <StackPanel Orientation="Horizontal">
                                 <SymbolIcon Symbol="Microphone"/>
-                                <TextBlock x:ConnectionId='9' x:Name="listenWithoutUIButtonText" Text=" without UI"/>
+                                <TextBlock x:Name="listenWithoutUIButtonText" Text=" without UI"/>
                             </StackPanel>
                         </Button>
                     </StackPanel>
                     <Canvas Height="200" Width="200" HorizontalAlignment="Center" Margin="0,10,0,10">
-                        <Rectangle x:ConnectionId='5' Name="colorRectangle" Width="200" Height="200"
+                        <Rectangle Name="colorRectangle" Width="200" Height="200"
                                    Fill="Gray" Stroke="White" StrokeThickness="20" />
-                        <Ellipse x:ConnectionId='6' Name="colorCircle" Width="160" Height="160"
+                        <Ellipse Name="colorCircle" Width="160" Height="160"
                                  Fill="Black" Canvas.Top="20" Canvas.Left="20"/>
                     </Canvas>
-                    <TextBlock x:ConnectionId='4' Name="resultTextBlock" TextWrapping="Wrap" HorizontalAlignment="Center" 
+                    <TextBlock Name="resultTextBlock" TextWrapping="Wrap" HorizontalAlignment="Center" 
                                Style="{StaticResource BodyTextBlockStyle}" />
                 </StackPanel>
             </ScrollViewer>
@@ -75,7 +76,6 @@
                           VerticalAlignment="Bottom" HorizontalAlignment="Right">
                 <AppBarButton.Flyout>
                     <MenuFlyout>
-                        <MenuFlyoutItem x:ConnectionId='3' Icon="Setting"  Text="SED-IB"                            />
                         <MenuFlyoutItem Icon="NewWindow" Text="New"/>
                         <MenuFlyoutItem Icon="OpenFile"  Text="Open"/>
                         <MenuFlyoutItem Icon="Save"      Text="Save"/>
@@ -91,4 +91,3 @@
         
     </Grid>
 </Page>
-

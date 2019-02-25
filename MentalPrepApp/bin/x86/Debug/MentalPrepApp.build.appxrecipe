@@ -778,6 +778,9 @@
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\Pages\PlayPage.xbf">
       <PackagePath>Views\Pages\PlayPage.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\SpeechPages\SRGSConstrSEDIBPage.xbf">
+      <PackagePath>Views\SpeechPages\SRGSConstrSEDIBPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\SpeechPages\SRGSConstraintPage.xbf">
       <PackagePath>Views\SpeechPages\SRGSConstraintPage.xbf</PackagePath>
     </AppxPackagedFile>

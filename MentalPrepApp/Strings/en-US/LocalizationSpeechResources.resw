@@ -117,6 +117,13 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="AdamsPrompt" xml:space="preserve">
+    <value>I'm Serious</value>
+    <comment>UI</comment>
+  </data>
+  <data name="ARS_SRGSListeningPromptText" xml:space="preserve">
+    <value>Adam Speak to choose colors for saying 'blue background, red border, green circle'.</value>
+  </data>
   <data name="DictationUIOptionsExampleText" xml:space="preserve">
     <value>For example, "The quick red fox jumped over the lazy dog."</value>
   </data>
@@ -187,7 +194,7 @@ green circle</value>
     <value>Tap the microphone and speak to choose colors for the circle, background, and border. Try saying 'blue background, red border, green circle'.</value>
   </data>
   <data name="SRGSListeningPromptText" xml:space="preserve">
-    <value>Speak to choose colors for the circle, background, and border. Try saying 'blue background, red border, green circle'.</value>
+    <value>Speak to choose colors for the circle, background, and border. Try slaying 'blue background, red border, green circle'.</value>
     <comment>SRGS ResultTextBlock content when listening</comment>
   </data>
   <data name="SRGSUIOptionsExampleText" xml:space="preserve">

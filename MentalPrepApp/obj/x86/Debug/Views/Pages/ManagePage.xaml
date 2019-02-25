@@ -24,8 +24,9 @@
             <StackPanel Grid.Column="0" Orientation="Horizontal">
                 <AppBarButton x:ConnectionId='2' Icon="Home" Label="Home"                            />
                 <AppBarButton x:ConnectionId='3' Icon="NewWindow" Label="PlayPage"                            />
-                <AppBarButton x:ConnectionId='4' Icon="Back" Label="Back"                      />
-                <AppBarButton x:ConnectionId='5' Icon="Forward" Label="Forward"                         />
+                <AppBarButton x:ConnectionId='4' Icon="Send"  Label="SRGS Constraints"                                  />
+                <AppBarButton x:ConnectionId='5' Icon="Back" Label="Back"                      />
+                <AppBarButton x:ConnectionId='6' Icon="Forward" Label="Forward"                         />
                 <TextBlock Text="Manage Page" FontSize="22"
                            VerticalAlignment="Center" Margin="160 0 0 0"/>
             </StackPanel>

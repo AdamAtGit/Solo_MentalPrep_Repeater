@@ -119,6 +119,7 @@ Styles\Styles.xbf
 Views\Pages\ManagePage.xbf
 Views\Pages\PlayPage.xbf
 Views\SpeechPages\SRGSConstraintPage.xbf
+Views\SpeechPages\SRGSConstrSEDIBPage.xbf
 Views\UserControls\AppFxs\Nested\CreateTTSLargeUserControl.xbf
 Views\UserControls\AppFxs\Nested\DictationUserControl.xbf
 Views\UserControls\AppFxs\RepeaterUserControl.xbf

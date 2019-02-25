@@ -20,7 +20,7 @@ using System.Diagnostics;
 
 namespace MentalPrepApp.Views.SpeechPages
 {
-    public sealed partial class SRGSConstraintPage : Page
+    public sealed partial class SRGSConstrSEDIBPage : Page
     {
 
         /// <summary>
@@ -51,7 +51,7 @@ namespace MentalPrepApp.Views.SpeechPages
             { "COLOR_ORANGE",Colors.Orange}, {"COLOR_GRAY",  Colors.Gray},   {"COLOR_WHITE",  Colors.White}
         };
 
-        public SRGSConstraintPage()
+        public SRGSConstrSEDIBPage()
         {
             this.InitializeComponent();
         }
@@ -354,11 +354,11 @@ namespace MentalPrepApp.Views.SpeechPages
         private async void RecognizeWithoutUI_Click(object sender, RoutedEventArgs e)
         {
             // Reset the text to prompt the user.
-            ////resultTextBlock.Text = speechResourceMap.GetValue("AdamsPrompt"
-            ////    , speechContext).ValueAsString;
+            resultTextBlock.Text = speechResourceMap.GetValue("AdamsPrompt"
+                , speechContext).ValueAsString;
 
-            resultTextBlock.Text = speechResourceMap.GetValue("SRGSListeningPromptText"
-              , speechContext).ValueAsString;
+            //resultTextBlock.Text = speechResourceMap.GetValue("SRGSListeningPromptText"
+            //  , speechContext).ValueAsString;
 
             // Disable the UI while recognition is occurring, and provide feedback to the user about current state.
             btnRecognizeWithUI.IsEnabled = false;
@@ -547,14 +547,5 @@ namespace MentalPrepApp.Views.SpeechPages
             Frame.Navigate(typeof(Views.Pages.ManagePage));
         }
 
-        private void MenuFlyoutItem_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void MfiNavToSedIb_Click(object sender, RoutedEventArgs e)
-        {
-            Frame.Navigate(typeof(Views.SpeechPages.SRGSConstrSEDIBPage));
-        }
     }
 }

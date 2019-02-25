@@ -24,6 +24,7 @@
             <StackPanel Grid.Column="0" Orientation="Horizontal">
                 <AppBarButton Icon="Home" Label="Home" Click="NavBacktoMain_Click"/>
                 <AppBarButton Icon="NewWindow" Label="PlayPage" Click="NavToPlayPage_Click"/>
+                <AppBarButton Icon="Send"  Label="SRGS Constraints" Click="NavToSRGSConstraint_Click"/>
                 <AppBarButton Icon="Back" Label="Back" Click="NavBack_Click"/>
                 <AppBarButton Icon="Forward" Label="Forward" Click="NavForward_Click"/>
                 <TextBlock Text="Manage Page" FontSize="22"

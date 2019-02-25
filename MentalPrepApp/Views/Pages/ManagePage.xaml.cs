@@ -47,5 +47,10 @@ namespace MentalPrepApp.Views.Pages
         {
             Frame.Navigate(typeof(Views.Pages.PlayPage));
         }
+
+        private void NavToSRGSConstraint_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(Views.SpeechPages.SRGSConstraintPage));
+        }
     }
 }

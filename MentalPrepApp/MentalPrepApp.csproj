@@ -111,6 +111,9 @@
     <Compile Include="Views\Pages\PlayPage.xaml.cs">
       <DependentUpon>PlayPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Views\SpeechPages\SRGSConstrSEDIBPage.xaml.cs">
+      <DependentUpon>SRGSConstrSEDIBPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\SpeechPages\SRGSConstraintPage.xaml.cs">
       <DependentUpon>SRGSConstraintPage.xaml</DependentUpon>
     </Compile>
@@ -271,6 +274,10 @@
     <Page Include="Views\Pages\PlayPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\SpeechPages\SRGSConstrSEDIBPage.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Views\SpeechPages\SRGSConstraintPage.xaml">
       <SubType>Designer</SubType>

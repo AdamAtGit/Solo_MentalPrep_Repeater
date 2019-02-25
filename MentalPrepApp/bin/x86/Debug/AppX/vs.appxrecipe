@@ -31,13 +31,13 @@
     <AppXManifest Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Core\AppxManifest.xml">
       <PackagePath>AppxManifest.xml</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-24T09:05:22.078</Modified>
+      <Modified>2019-02-25T04:23:14.895</Modified>
     </AppXManifest>
   </ItemGroup>
   <ItemGroup>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MentalPrep.exe">
       <PackagePath>entrypoint\MentalPrep.exe</PackagePath>
-      <Modified>2019-02-24T09:05:21.280</Modified>
+      <Modified>2019-02-25T04:23:14.100</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Microsoft SDKs\UWPNuGetPackages\microsoft.csharp\4.0.1\lib\netcore50\Microsoft.CSharp.dll">
       <PackagePath>Microsoft.CSharp.dll</PackagePath>
@@ -1002,43 +1002,47 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MentalPrep.xr.xml">
       <PackagePath>MentalPrep.xr.xml</PackagePath>
-      <Modified>2019-02-24T09:05:20.688</Modified>
+      <Modified>2019-02-25T04:18:20.159</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\App.xbf">
       <PackagePath>App.xbf</PackagePath>
-      <Modified>2019-02-24T09:05:20.837</Modified>
+      <Modified>2019-02-25T04:23:13.702</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\MainPage.xbf">
       <PackagePath>MainPage.xbf</PackagePath>
-      <Modified>2019-02-24T09:05:20.837</Modified>
+      <Modified>2019-02-25T04:23:13.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Styles\Styles.xbf">
       <PackagePath>Styles\Styles.xbf</PackagePath>
-      <Modified>2019-02-24T09:05:20.782</Modified>
+      <Modified>2019-02-25T04:23:13.666</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\Pages\ManagePage.xbf">
       <PackagePath>Views\Pages\ManagePage.xbf</PackagePath>
-      <Modified>2019-02-24T09:05:20.838</Modified>
+      <Modified>2019-02-25T04:23:13.703</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\Pages\PlayPage.xbf">
       <PackagePath>Views\Pages\PlayPage.xbf</PackagePath>
-      <Modified>2019-02-24T09:05:20.839</Modified>
+      <Modified>2019-02-25T04:23:13.704</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\SpeechPages\SRGSConstrSEDIBPage.xbf">
+      <PackagePath>Views\SpeechPages\SRGSConstrSEDIBPage.xbf</PackagePath>
+      <Modified>2019-02-25T04:23:13.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\SpeechPages\SRGSConstraintPage.xbf">
       <PackagePath>Views\SpeechPages\SRGSConstraintPage.xbf</PackagePath>
-      <Modified>2019-02-24T09:05:20.841</Modified>
+      <Modified>2019-02-25T04:23:13.705</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\UserControls\AppFxs\Nested\CreateTTSLargeUserControl.xbf">
       <PackagePath>Views\UserControls\AppFxs\Nested\CreateTTSLargeUserControl.xbf</PackagePath>
-      <Modified>2019-02-24T09:05:20.804</Modified>
+      <Modified>2019-02-25T04:23:13.684</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\UserControls\AppFxs\Nested\DictationUserControl.xbf">
       <PackagePath>Views\UserControls\AppFxs\Nested\DictationUserControl.xbf</PackagePath>
-      <Modified>2019-02-24T09:05:20.843</Modified>
+      <Modified>2019-02-25T04:23:13.706</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\UserControls\AppFxs\RepeaterUserControl.xbf">
       <PackagePath>Views\UserControls\AppFxs\RepeaterUserControl.xbf</PackagePath>
-      <Modified>2019-02-24T09:05:20.836</Modified>
+      <Modified>2019-02-25T04:23:13.701</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Program Files %28x86%29\Windows Kits\10\UnionMetadata\10.0.17134.0\Windows.winmd">
       <PackagePath>WinMetadata\Windows.winmd</PackagePath>
@@ -1047,11 +1051,11 @@
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\resources.pri">
       <PackagePath>resources.pri</PackagePath>
       <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
-      <Modified>2019-02-24T08:11:54.856</Modified>
+      <Modified>2019-02-25T04:18:24.230</Modified>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Core\MentalPrep.exe">
       <PackagePath>MentalPrep.exe</PackagePath>
-      <Modified>2019-02-24T09:05:22.059</Modified>
+      <Modified>2019-02-25T04:23:14.872</Modified>
     </AppxPackagedFile>
   </ItemGroup>
   <ItemGroup>
