@@ -105,6 +105,9 @@
     <Compile Include="SpeechClasses\AudioCapturePermissions.cs" />
     <Compile Include="ViewModelsSpeech\Commands\StartRecognizingCommand.cs" />
     <Compile Include="ViewModelsSpeech\ViewModelSpeech.cs" />
+    <Compile Include="Views\Pages\AppOverViewPage.xaml.cs">
+      <DependentUpon>AppOverViewPage.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Views\Pages\ManagePage.xaml.cs">
       <DependentUpon>ManagePage.xaml</DependentUpon>
     </Compile>
@@ -122,6 +125,12 @@
     </Compile>
     <Compile Include="Views\UserControls\AppFxs\Nested\DictationUserControl.xaml.cs">
       <DependentUpon>DictationUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\AppFxs\Nested\VoiceCommandsUserControl.xaml.cs">
+      <DependentUpon>VoiceCommandsUserControl.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserControls\AppFxs\Nested\WeatherCommandsBarUserControl.xaml.cs">
+      <DependentUpon>WeatherCommandsBarUserControl.xaml</DependentUpon>
     </Compile>
     <Compile Include="Views\UserControls\AppFxs\RepeaterUserControl.xaml.cs">
       <DependentUpon>RepeaterUserControl.xaml</DependentUpon>
@@ -267,6 +276,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Views\Pages\AppOverViewPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Views\Pages\ManagePage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -288,6 +301,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Views\UserControls\AppFxs\Nested\DictationUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\AppFxs\Nested\VoiceCommandsUserControl.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserControls\AppFxs\Nested\WeatherCommandsBarUserControl.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

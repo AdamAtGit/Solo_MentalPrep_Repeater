@@ -116,12 +116,15 @@ App.xbf
 MainPage.xbf
 MentalPrep.xr.xml
 Styles\Styles.xbf
+Views\Pages\AppOverViewPage.xbf
 Views\Pages\ManagePage.xbf
 Views\Pages\PlayPage.xbf
 Views\SpeechPages\SRGSConstraintPage.xbf
 Views\SpeechPages\SRGSConstrSEDIBPage.xbf
 Views\UserControls\AppFxs\Nested\CreateTTSLargeUserControl.xbf
 Views\UserControls\AppFxs\Nested\DictationUserControl.xbf
+Views\UserControls\AppFxs\Nested\VoiceCommandsUserControl.xbf
+Views\UserControls\AppFxs\Nested\WeatherCommandsBarUserControl.xbf
 Views\UserControls\AppFxs\RepeaterUserControl.xbf
 Properties\Default.rd.xml
 SRGS\en-US\SRGSColors.xml

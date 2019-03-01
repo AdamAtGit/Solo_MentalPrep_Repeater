@@ -52,14 +52,15 @@
                            Margin="0,5,0,0"
                            HorizontalAlignment="Center"/>
             <TextBox x:Name="boxTtsRawBig" Height="230" Width="350" 
-                     PlaceholderText="Dictate and/or Type, Paste the Text to be Spoken!"
+                    
+                    
                      TextWrapping="Wrap"
                      AcceptsReturn="True"
                      IsReadOnly="False"
                      Text= ""
                      IsSpellCheckEnabled="True"
                      HorizontalAlignment="Center" VerticalAlignment="Top"
-                     Margin="0 5"/>
+                     Margin="0 5"/> <!--PlaceholderText="Dictate and/or Type, Paste the Text to be Spoken!"-->
         </StackPanel>
      
         <!--3rd row-->
@@ -126,15 +127,21 @@
                 
                 <AppBarButton x:Name="BtnSpeechRecogWeatherSearch" Grid.Column="0" 
                               Label="Weather" Icon="World"
-                              Margin="0 0 200 0" Click="BtnSpeechRecogWeatherSearchAsync_Click"/>
+                              Margin="0 0 200 0"
+                              Click="BtnSpeechRecogWeatherSearchAsync_Click"
+                              Visibility="Collapsed"/>
 
-                    <SymbolIcon Symbol="Microphone" Margin="0 0 0 0"/>
-                    <SymbolIcon Symbol="Audio"  Margin="100 0 0 0"/>
-                    <SymbolIcon Symbol="Admin"  Margin="190 0 0 0"/>
+                    <SymbolIcon Symbol="Microphone" Margin="0 0 0 0"
+                                 Visibility="Collapsed"/>
+                    <SymbolIcon Symbol="Audio" Margin="100 0 0 0"
+                                 Visibility="Collapsed"/>
+                    <SymbolIcon Symbol="Admin"  Margin="190 0 0 0"
+                                 Visibility="Collapsed"/>
 
                     <Image x:Name="imgSpeakerOut" Grid.Column="1"             
                     Source="/Assets/Images/imgOutSoundBullHorn.png"
-                    Height="50" Width="60" Margin="0 0 0 0"/>
+                    Height="50" Width="60" Margin="0 0 0 0"
+                            Visibility="Collapsed"/>
                 <!--Source="/Assets/Images/Metro/Speaker-Volume.png"-->
                 </Grid>
             </StackPanel>

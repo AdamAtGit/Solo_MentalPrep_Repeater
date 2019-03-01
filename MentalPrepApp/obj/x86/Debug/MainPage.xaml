@@ -5,16 +5,33 @@
     xmlns:local="using:MentalPrepApp"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:uc="using:MentalPrepApp.Views.UserControls.AppFxs.Nested"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid Height="640" Width="1080" Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <!--MainPage grid-->
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
+            <!--For Nav, cmds, appfx Menu -->
             <RowDefinition Height="*"/>
+            <!--Content Pages or UCs -->
             <RowDefinition Height="Auto"/>
+            <!--Bottom for status,over-all app progress etc -->
         </Grid.RowDefinitions>
 
+        <Grid.ColumnDefinitions>
+            <!--1080 360 x 3 abreast 1 Phone app Page-->
+            <ColumnDefinition Width="*"/>
+            <!--360-->
+            <ColumnDefinition Width="*"/>
+            <!--360-->
+            <ColumnDefinition Width="*"/>
+            <!--360-->
+        </Grid.ColumnDefinitions>
+
+        <!-- Top Bar Nav, speech comds button , and Appx menu-->
+        <!--Nav Menu-->
         <Grid Grid.Row="0" Background="LightGray">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*"/>
@@ -23,12 +40,11 @@
 
             <StackPanel Grid.Column="0" Orientation="Horizontal">
                 <AppBarButton Icon="Home" Label="Home"/>
-                <AppBarButton x:ConnectionId='2' Icon="NewWindow" Label="Play Page"                            />
-                <AppBarButton x:ConnectionId='3' Icon="Manage" Label="Manage"                          />
-                <AppBarButton x:ConnectionId='4' Icon="Send"  Label="SRGS Constraints"                                  />
-                <AppBarButton x:ConnectionId='5' Icon="Back" Label="Back"                      />
-                <AppBarButton x:ConnectionId='6' Icon="Forward" Label="Forward"                         />
-                <TextBlock Text="Home Page" FontSize="22"
+                <AppBarButton x:ConnectionId='9' Icon="NewWindow" Label="PlayPage"                            />
+                <AppBarButton x:ConnectionId='10' Icon="Send"  Label="SRGS Constraints"                                  />
+                <AppBarButton x:ConnectionId='11' Icon="Back" Label="Back"                      />
+                <AppBarButton x:ConnectionId='12' Icon="Forward" Label="Forward"                         />
+                <TextBlock Text="Manage Page" FontSize="22"
                            VerticalAlignment="Center" Margin="160 0 0 0"/>
             </StackPanel>
 
@@ -46,8 +62,133 @@
             </AppBarButton>
         </Grid>
 
+        <!--Voice Cmd Buttons strip-->
+        <Grid Grid.Row="0" Grid.Column="1" Background="Gray">
+            <uc:WeatherCommandsBarUserControl/>
+        </Grid>
+
+        <StackPanel x:ConnectionId='2' Grid.Row="0" Grid.Column="2" x:Name="stpTopBarRight" 
+                    Background="Gray">
+            <TextBlock Text="stpTopBarMiddle" FontSize="14"
+                       HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <!--Voice Cmd Buttons strip-->
+        <Grid Grid.Row="0" Grid.Column="2" Background="LightGray">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="Auto"/>
+            </Grid.ColumnDefinitions>
+
+            <StackPanel Grid.Column="0" Orientation="Horizontal">
+                <AppBarButton Icon="Account"  Label="AppFx"/>
+                <!--<AppBarButton Icon="NewWindow" Label="PlayPage"/>
+                <AppBarButton Icon="Send" Label="SRGS Constraints"/>
+                <AppBarButton Icon="Back" Label="Back"/>-->
+            </StackPanel>
+
+            <AppBarButton Grid.Column="1" Icon="More">
+                <AppBarButton.Flyout>
+                    <MenuFlyout>
+                        <MenuFlyoutItem Icon="NewWindow" Text="New"/>
+                        <MenuFlyoutItem Icon="OpenFile"  Text="Open"/>
+                        <MenuFlyoutItem Icon="Save"      Text="Save"/>
+                        <MenuFlyoutItem Icon="Save"      Text="Save As"/>
+                        <MenuFlyoutItem Icon="ClosePane" Text="Close"/>
+                        <MenuFlyoutItem Icon="Setting"   Text="Settings"/>
+                    </MenuFlyout>
+                </AppBarButton.Flyout>
+            </AppBarButton>
+        </Grid>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         <!-- Content-->
-        <!--<Ellipse Grid.Row="1" Height="100" Width="100" Fill="BurlyWood"/>-->
+        <StackPanel x:ConnectionId='3' Grid.Row="1" x:Name="stpContentLeft" 
+                    Background="Gray">
+            <TextBlock Text="Content: UCS or Pages" FontSize="14"
+                       HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel x:ConnectionId='4' Grid.Row="1" Grid.Column="1" x:Name="stpContentMiddle" 
+                    Background="Gray">
+            <TextBlock Text="Content: UCS or Pages" FontSize="14"
+                       HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel x:ConnectionId='5' Grid.Row="1" Grid.Column="2" x:Name="stpContentRight" 
+                    Background="Gray">
+            <TextBlock Text="Content: UCS or Pages" FontSize="14"
+                       HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <!--End Content-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <!-- Bottom overall app Stat,Prog etc-->
+        <StackPanel x:ConnectionId='6' Grid.Row="2" x:Name="stpBottomRow" 
+                        Background="Gray">
+            <TextBlock Text="overall progress 1" FontSize="14"
+                           HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel x:ConnectionId='7' Grid.Row="2" Grid.Column="1" x:Name="stpBottomRowMiddle" 
+                    Background="Gray">
+            <TextBlock Text="overall progress 2" FontSize="14"
+                           HorizontalAlignment="Center"/>
+        </StackPanel>
+
+        <StackPanel x:ConnectionId='8' Grid.Row="2" Grid.Column="2" x:Name="stpBottomRowRight" 
+                    Background="Gray">
+            <TextBlock Text="overall progress 3" FontSize="14"
+                           HorizontalAlignment="Center"/>
+        </StackPanel>
+        <!-- End  Bottom overall app Stat,Prog etc-->
+
+
+
+
+
+
+
+
+
+
+
     </Grid>
+
 </Page>
 

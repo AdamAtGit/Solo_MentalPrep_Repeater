@@ -772,6 +772,9 @@
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Styles\Styles.xbf">
       <PackagePath>Styles\Styles.xbf</PackagePath>
     </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\Pages\AppOverViewPage.xbf">
+      <PackagePath>Views\Pages\AppOverViewPage.xbf</PackagePath>
+    </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\Pages\ManagePage.xbf">
       <PackagePath>Views\Pages\ManagePage.xbf</PackagePath>
     </AppxPackagedFile>
@@ -789,6 +792,12 @@
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\UserControls\AppFxs\Nested\DictationUserControl.xbf">
       <PackagePath>Views\UserControls\AppFxs\Nested\DictationUserControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\UserControls\AppFxs\Nested\VoiceCommandsUserControl.xbf">
+      <PackagePath>Views\UserControls\AppFxs\Nested\VoiceCommandsUserControl.xbf</PackagePath>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\UserControls\AppFxs\Nested\WeatherCommandsBarUserControl.xbf">
+      <PackagePath>Views\UserControls\AppFxs\Nested\WeatherCommandsBarUserControl.xbf</PackagePath>
     </AppxPackagedFile>
     <AppxPackagedFile Include="C:\Users\Flazz\source\repos\FebOn\April_Master\SoloApps\MentalPrepApp\MentalPrepApp\bin\x86\Debug\Views\UserControls\AppFxs\RepeaterUserControl.xbf">
       <PackagePath>Views\UserControls\AppFxs\RepeaterUserControl.xbf</PackagePath>
